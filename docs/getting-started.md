@@ -1,23 +1,33 @@
-# Getting Started with POC Accelerator
+# Getting Started
 
-**Complete 5-minute quick start guide**
+Get up and running in 5 minutes.
 
----
+## Installation
 
-## Prerequisites
-
-- Python 3.10+ ([Download](https://www.python.org/downloads/))
-- Git ([Download](https://git-scm.com/downloads))
-- Optional: Azure subscription (for Azure features)
-- Optional: GitHub account (for saving POCs)
-
----
-
-## Installation (5 Minutes)
-
-### Step 1: Clone Repository
 ```bash
-git clone https://github.com/your-username/poc-accelerator.git
+cd TechConnect
+python app.py
+```
+
+Visit: **http://localhost:5000**
+
+## Your First POC
+
+1. Start the application
+2. Enter a scenario title
+3. Select solution area and complexity
+4. Click Generate
+5. Review results
+
+## Next Steps
+
+- [Deployment Guide](deployment.html) - Deploy to production
+- [API Reference](api-reference.html) - Use the REST API
+- [Back to Home](index.html) - Return to documentation
+
+---
+
+[View on GitHub](https://github.com/derricksobrien/poc-accelerator)
 cd poc-accelerator/TechConnect
 ```
 
