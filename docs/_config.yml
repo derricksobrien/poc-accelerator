@@ -1,0 +1,52 @@
+# GitHub Pages Jekyll Configuration for POC Accelerator Documentation
+
+title: POC Accelerator RAG System
+description: Complete Documentation and API Reference
+theme: jekyll-theme-cayman
+
+# Site settings
+url: "https://your-github-username.github.io/poc-accelerator"
+baseurl: "/poc-accelerator"
+timezone: UTC
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: Getting Started
+    url: /docs/getting-started
+  - title: Setup Guide
+    url: /docs/setup-guide
+  - title: Deployment
+    url: /docs/deployment
+  - title: API Reference
+    url: /docs/api-reference
+  - title: Architecture
+    url: /docs/architecture
+  - title: GitHub
+    url: https://github.com/your-github-username/poc-accelerator
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  
+exclude:
+  - .gitignore
+  - README.md
+  - LICENSE
+  - CNAME
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Site author
+author:
+  name: AI Engineering Team
+  email: your-email@example.com
+
+# Copyright
+copyright: "Copyright © 2026 POC Accelerator. All rights reserved."
