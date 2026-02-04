@@ -22,25 +22,25 @@ Then visit: **http://localhost:5000**
 ## 📚 Documentation
 
 ### Getting Started
-- **[Getting Started Guide](./getting-started.md)** - 5-minute quick start
-- **[Setup Guide](./setup-guide.md)** - Detailed configuration
-- **[Troubleshooting](./troubleshooting.md)** - Common issues and solutions
+- **[Getting Started Guide]({{ site.baseurl }}/getting-started.html)** - 5-minute quick start
+- **[Setup Guide]({{ site.baseurl }}/getting-started.html)** - Detailed configuration
+- **[Troubleshooting]({{ site.baseurl }}/getting-started.html)** - Common issues and solutions
 
 ### Deployment & Operations
-- **[Production Deployment](./deployment.md)** - Deploy to Azure/Docker
-- **[Testing Guide](./testing.md)** - Test procedures
-- **[Monitoring & Operations](./operations.md)** - Production support
+- **[Production Deployment]({{ site.baseurl }}/getting-started.html)** - Deploy to Azure/Docker
+- **[Testing Guide]({{ site.baseurl }}/getting-started.html)** - Test procedures
+- **[Monitoring & Operations]({{ site.baseurl }}/getting-started.html)** - Production support
 
 ### Technical Reference
-- **[Architecture](./architecture.md)** - System design and components
-- **[API Reference](./api-reference.md)** - REST endpoints documentation
-- **[Configuration](./configuration.md)** - Configuration options
-- **[Technology Stack](./technology-stack.md)** - Tools and frameworks
+- **[Architecture]({{ site.baseurl }}/getting-started.html)** - System design and components
+- **[API Reference]({{ site.baseurl }}/getting-started.html)** - REST endpoints documentation
+- **[Configuration]({{ site.baseurl }}/getting-started.html)** - Configuration options
+- **[Technology Stack]({{ site.baseurl }}/getting-started.html)** - Tools and frameworks
 
 ### Project Information
-- **[Project Delivery](./project-delivery.md)** - Complete specification
-- **[Project Index](./project-index.md)** - Navigation and file reference
-- **[Executive Summary](./executive-summary.md)** - High-level overview
+- **[Project Delivery]({{ site.baseurl }}/getting-started.html)** - Complete specification
+- **[Project Index]({{ site.baseurl }}/getting-started.html)** - Navigation and file reference
+- **[Executive Summary]({{ site.baseurl }}/getting-started.html)** - High-level overview
 
 ---
 
@@ -283,4 +283,4 @@ This is a complete, production-ready system. To extend:
 
 ---
 
-[View on GitHub](https://github.com/your-github-username/poc-accelerator) | [View on DockerHub](https://hub.docker.com/r/your-username/poc-accelerator)
+[View on GitHub](https://github.com/derricksobrien/poc-accelerator) | [Get Started with Documentation]({{ site.baseurl }}/getting-started.html)

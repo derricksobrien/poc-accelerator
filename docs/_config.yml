@@ -5,26 +5,26 @@ description: Complete Documentation and API Reference
 theme: jekyll-theme-cayman
 
 # Site settings
-url: "https://your-github-username.github.io/poc-accelerator"
+url: "https://derricksobrien.github.io/poc-accelerator"
 baseurl: "/poc-accelerator"
 timezone: UTC
 
 # Navigation
 nav_links:
   - title: Home
-    url: /
+    url: /poc-accelerator/
   - title: Getting Started
-    url: /docs/getting-started
+    url: /poc-accelerator/getting-started.html
   - title: Setup Guide
-    url: /docs/setup-guide
+    url: /poc-accelerator/setup-guide.html
   - title: Deployment
-    url: /docs/deployment
+    url: /poc-accelerator/deployment.html
   - title: API Reference
-    url: /docs/api-reference
+    url: /poc-accelerator/api-reference.html
   - title: Architecture
-    url: /docs/architecture
+    url: /poc-accelerator/architecture.html
   - title: GitHub
-    url: https://github.com/your-github-username/poc-accelerator
+    url: https://github.com/derricksobrien/poc-accelerator
 
 # Build settings
 markdown: kramdown
@@ -45,8 +45,8 @@ plugins:
 
 # Site author
 author:
-  name: AI Engineering Team
-  email: your-email@example.com
+  name: Derrick So'Brien
+  email: info@networksetcetera.com
 
 # Copyright
 copyright: "Copyright © 2026 POC Accelerator. All rights reserved."
