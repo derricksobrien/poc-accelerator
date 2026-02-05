@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-04T22:12:38.084499",
+  "timestamp": "2026-02-04T22:33:34.197707",
   "target_url": "https://rag-system2-api.purplefield-e5b9c49f.eastus.azurecontainerapps.io",
   "summary": {
     "total": 11,
-    "passed": 9,
-    "failed": 2,
-    "success_rate": "81.8%"
+    "passed": 8,
+    "failed": 3,
+    "success_rate": "72.7%"
   },
   "results": [
     {
@@ -22,15 +22,15 @@
     },
     {
       "test": "Static: script.js",
-      "status": "PASS",
-      "details": "Loaded (11729 bytes)",
-      "response_time": 1539.6978855133057
+      "status": "FAIL",
+      "details": "HTTPSConnectionPool(host='rag-system2-api.purplefield-e5b9c49f.eastus.azurecontainerapps.io', port=443): Read timed out. (read timeout=10)",
+      "response_time": 0
     },
     {
       "test": "Static: style.css",
       "status": "PASS",
       "details": "Loaded (6587 bytes)",
-      "response_time": 310.7106685638428
+      "response_time": 8491.629600524902
     },
     {
       "test": "API URL Detection",
@@ -42,37 +42,37 @@
       "test": "POC Generation",
       "status": "PASS",
       "details": "Generated POC ID: poc-test-poc-after-rebuild",
-      "response_time": 293.33949089050293
+      "response_time": 267.7791118621826
     },
     {
       "test": "Semantic Search",
       "status": "PASS",
       "details": "API responded with results",
-      "response_time": 292.0095920562744
+      "response_time": 301.1307716369629
     },
     {
       "test": "History Endpoint",
       "status": "PASS",
       "details": "Retrieved 1 POCs",
-      "response_time": 318.1886672973633
+      "response_time": 277.6608467102051
     },
     {
       "test": "CORS Headers",
       "status": "PASS",
       "details": "CORS properly configured",
-      "response_time": 316.072940826416
+      "response_time": 300.6117343902588
     },
     {
       "test": "Performance Benchmark",
       "status": "PASS",
-      "details": "Avg: 303ms | Min: 300ms | Max: 306ms",
+      "details": "Avg: 284ms | Min: 258ms | Max: 299ms",
       "response_time": 0
     },
     {
       "test": "No Fetch Errors",
       "status": "PASS",
       "details": "API call succeeded (no CORS failure)",
-      "response_time": 299.588680267334
+      "response_time": 294.08740997314453
     }
   ]
 }

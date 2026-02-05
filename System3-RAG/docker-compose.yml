@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  system3-rag:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      ENV: development
+      PORT: 8000
+      HOST: 0.0.0.0
+      SESSION_TIMEOUT_MINUTES: 60
+      LOG_LEVEL: INFO
+      # Azure Configuration (set via .env file)
+      # AI_FOUNDRY_ENDPOINT: ...
+      # AI_FOUNDRY_KEY: ...
+    volumes:
+      - ./app:/app/app
+      - ./static:/app/static
+    command: python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    env_file:
+      - .env
+    networks:
+      - system3-network
+
+networks:
+  system3-network:
+    driver: bridge
