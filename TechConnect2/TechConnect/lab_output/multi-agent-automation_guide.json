@@ -1,0 +1,184 @@
+{
+  "lab_metadata": {
+    "title": "Lab: Deploy Multi-Agent Custom Automation Engine",
+    "solution_id": "multi-agent-automation",
+    "complexity_level": "L400",
+    "solution_area": "AI",
+    "estimated_duration": "2-4 hours",
+    "duration": "2-4 hours",
+    "repository_url": "https://github.com/microsoft/Solution-Accelerators"
+  },
+  "overview": {
+    "objective": "Deploy and configure Multi-Agent Custom Automation Engine in your Azure environment.",
+    "description": "Delegate complex, repetitive tasks to AI agents that act on your behalf\u2014executing work efficiently and ensuring results align with standards.",
+    "learning_outcomes": [
+      "Understand the architecture of Multi-Agent Custom Automation Engine",
+      "Configure required Azure services and prerequisites",
+      "Deploy the solution using provided templates",
+      "Validate the deployment and verify functionality",
+      "Implement responsible AI governance practices"
+    ]
+  },
+  "prerequisites": {
+    "required": [
+      "Azure Subscription with Owner access",
+      "Azure OpenAI Service approval",
+      "Azure AI Foundry quota"
+    ],
+    "validation_steps": [
+      {
+        "step": 1,
+        "action": "Verify: Azure Subscription with Owner access",
+        "validation_command": "az account show --query id",
+        "expected_result": "Success/Confirmed"
+      },
+      {
+        "step": 2,
+        "action": "Verify: Azure OpenAI Service approval",
+        "validation_command": "az cognitiveservices account list --resource-group <rg>",
+        "expected_result": "Success/Confirmed"
+      },
+      {
+        "step": 3,
+        "action": "Verify: Azure AI Foundry quota",
+        "validation_command": "az providerhub show --namespace Microsoft.AIServices",
+        "expected_result": "Success/Confirmed"
+      }
+    ]
+  },
+  "technologies": {
+    "services": [
+      "Azure AI Foundry Models",
+      "Azure AI Foundry Agent Service",
+      "Agent Framework",
+      "Azure Container Apps",
+      "Azure Cosmos DB",
+      "Foundry IQ"
+    ],
+    "languages": [
+      "Python",
+      "TypeScript"
+    ]
+  },
+  "safety_guardrails": {
+    "required": true,
+    "disclaimer": "This solution includes Generative AI/LLM components. \nThe following governance practices are required:\n- Enable monitoring for model outputs\n- Implement human review workflows  \n- Document AI capabilities and limitations\n- Ensure Microsoft RAI compliance\n- Setup audit logging and tracking"
+  },
+  "lab_steps": [
+    {
+      "section": "1. Setup",
+      "steps": [
+        {
+          "number": "1.1",
+          "title": "Verify prerequisites",
+          "description": "Ensure all 3 prerequisites are met",
+          "action": "Run validation script",
+          "time_estimate": "5 minutes"
+        },
+        {
+          "number": "1.2",
+          "title": "Clone repository",
+          "description": "Clone from https://github.com/microsoft/Solution-Accelerators",
+          "action": "git clone <repo-url>",
+          "time_estimate": "3 minutes"
+        }
+      ]
+    },
+    {
+      "section": "2. Configuration",
+      "steps": [
+        {
+          "number": "2.1",
+          "title": "Configure Azure services",
+          "description": "Set up required services: Azure AI Foundry Models, Azure AI Foundry Agent Service, Agent Framework...",
+          "action": "Follow service setup guides",
+          "time_estimate": "15-20 minutes"
+        },
+        {
+          "number": "2.2",
+          "title": "Configure environment",
+          "description": "Set environment variables and credentials",
+          "action": "cp .env.example .env && populate values",
+          "time_estimate": "5 minutes"
+        }
+      ]
+    },
+    {
+      "section": "3. Deployment",
+      "steps": [
+        {
+          "number": "3.1",
+          "title": "Deploy infrastructure",
+          "description": "Deploy resources using IaC",
+          "action": "bicep deploy or terraform apply",
+          "time_estimate": "45-60 minutes"
+        },
+        {
+          "number": "3.2",
+          "title": "Deploy application",
+          "description": "Deploy application code",
+          "action": "az container app deploy or similar",
+          "time_estimate": "10-15 minutes"
+        }
+      ]
+    },
+    {
+      "section": "4. Validation",
+      "steps": [
+        {
+          "number": "4.1",
+          "title": "Test endpoints",
+          "description": "Verify service endpoints are responding",
+          "action": "curl or Postman tests",
+          "time_estimate": "5 minutes"
+        },
+        {
+          "number": "4.2",
+          "title": "Validate functionality",
+          "description": "Run solution-specific tests for Multi-Agent Custom Automation Engine",
+          "action": "pytest or integration tests",
+          "time_estimate": "10 minutes"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "success_criteria": [
+      "All prerequisites verified",
+      "Azure resources successfully deployed",
+      "Application endpoints responding",
+      "Functionality tests passing",
+      "No critical errors in logs",
+      "RAI governance policies documented and implemented"
+    ],
+    "troubleshooting": {
+      "common_issues": [
+        {
+          "issue": "Prerequisite validation fails",
+          "cause": "Missing or incorrect setup",
+          "resolution": "Review prerequisites section and re-run validation"
+        },
+        {
+          "issue": "Deployment timeout",
+          "cause": "Resource creation taking longer than expected",
+          "resolution": "Wait 2-3 minutes and check Azure portal for resource status"
+        },
+        {
+          "issue": "Authentication errors",
+          "cause": "Incorrect credentials or permissions",
+          "resolution": "Verify credentials in .env file and Azure RBAC assignments"
+        },
+        {
+          "issue": "Service unavailable",
+          "cause": "Service not fully initialized",
+          "resolution": "Wait 1-2 minutes and retry endpoint calls"
+        }
+      ],
+      "support_resources": [
+        "Repository: https://github.com/microsoft/Solution-Accelerators",
+        "Azure Support: https://support.microsoft.com/en-us",
+        "Skillable Support: https://www.skillable.com/support"
+      ]
+    }
+  }
+}

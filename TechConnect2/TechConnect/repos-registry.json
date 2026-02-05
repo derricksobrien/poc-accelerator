@@ -1,0 +1,106 @@
+{
+  "repositories": [
+    {
+      "id": "solution-accelerators",
+      "name": "Microsoft Solution Accelerators",
+      "github_url": "https://github.com/microsoft/solution-accelerators.git",
+      "solution_area": "AI",
+      "technical_complexity": "L400",
+      "responsible_ai_tag": true,
+      "enabled": true,
+      "description": "Enterprise-scale solution accelerators for AI, data, and automation"
+    },
+    {
+      "id": "content-processing",
+      "name": "Content Processing Accelerator",
+      "github_url": "https://github.com/microsoft/content-processing-solution-accelerator.git",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "responsible_ai_tag": true,
+      "enabled": true,
+      "description": "Document processing with AI for invoices, contracts, claims"
+    },
+    {
+      "id": "fabric-data-foundation",
+      "name": "Unified Data Foundation with Fabric",
+      "github_url": "https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator.git",
+      "solution_area": "Azure (Data & AI)",
+      "technical_complexity": "L400",
+      "responsible_ai_tag": false,
+      "enabled": true,
+      "description": "Medallion lakehouse architecture using Microsoft Fabric"
+    },
+    {
+      "id": "agentic-unified-data",
+      "name": "Agentic Applications for Unified Data Foundation",
+      "github_url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator.git",
+      "solution_area": "AI",
+      "technical_complexity": "L400",
+      "responsible_ai_tag": true,
+      "enabled": true,
+      "description": "Added on 2026-01-20T13:52:21.066412"
+    },
+    {
+      "id": "ai-chat",
+      "name": "Azure AI Chat with Your Data",
+      "github_url": "https://github.com/Azure-Samples/azure-search-openai-demo.git",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "responsible_ai_tag": true,
+      "enabled": true,
+      "description": "Added on 2026-01-20T14:07:15.218105"
+    },
+    {
+      "id": "intelligent-app",
+      "name": "Intelligent Apps with Semantic Kernel",
+      "github_url": "https://github.com/microsoft/semantic-kernel.git",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "responsible_ai_tag": true,
+      "enabled": true,
+      "description": "Added on 2026-01-20T14:07:19.194369"
+    },
+    {
+      "id": "fabric-samples",
+      "name": "Microsoft Fabric Samples",
+      "github_url": "https://github.com/microsoft/fabric-samples.git",
+      "solution_area": "Azure (Data & AI)",
+      "technical_complexity": "L300",
+      "responsible_ai_tag": false,
+      "enabled": true,
+      "description": "Added on 2026-01-20T14:07:45.079559"
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt Engineering Guide",
+      "github_url": "https://github.com/microsoft/guidance.git",
+      "solution_area": "AI",
+      "technical_complexity": "L200",
+      "responsible_ai_tag": false,
+      "enabled": true,
+      "description": "Added on 2026-01-20T14:07:49.479479"
+    }
+  ],
+  "crawler_config": {
+    "max_file_size_mb": 50,
+    "include_extensions": [
+      ".md",
+      ".py",
+      ".ts",
+      ".js",
+      ".yaml",
+      ".yml",
+      ".json"
+    ],
+    "exclude_dirs": [
+      "node_modules",
+      ".git",
+      "dist",
+      "build",
+      "__pycache__",
+      ".venv"
+    ],
+    "depth": 3,
+    "timeout_seconds": 300
+  }
+}
