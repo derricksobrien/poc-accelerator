@@ -1,0 +1,488 @@
+{
+  "catalog_metadata": {
+    "version": "2.0.0",
+    "last_updated": "2026-02-04",
+    "source": "GitHub Solution Accelerators + TechConnect Ingestion",
+    "governance": "Responsible AI (RAI) / Microsoft Solution Accelerators",
+    "total_solutions": 15
+  },
+  "solution_accelerators": [
+    {
+      "id": "multi-agent-automation",
+      "name": "Multi-Agent Custom Automation Engine",
+      "solution_area": "AI",
+      "technical_complexity": "L400",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/Solution-Accelerators",
+      "description": "Delegate complex, repetitive tasks to AI agents that act on your behalf—executing work efficiently and ensuring results align with standards. This enterprise-ready multi-agent framework enables autonomous task execution, workflow orchestration, and intelligent decision-making.",
+      "key_technologies": [
+        "Azure AI Foundry",
+        "Agent Framework",
+        "Azure Container Apps",
+        "Azure Cosmos DB"
+      ],
+      "languages": ["Python", "TypeScript", "Bicep"],
+      "prerequisites": [
+        "Azure Subscription (Owner access)",
+        "Azure OpenAI Service approval",
+        "Azure AI Foundry quota"
+      ],
+      "use_cases": [
+        "Task automation",
+        "Workflow orchestration",
+        "Intelligent scheduling",
+        "Multi-step process execution"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "content-processing",
+      "name": "Content Processing Accelerator",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/content-processing-solution-accelerator",
+      "description": "Extract data and apply schemas across multi-modal content (text, images, tables, graphs) with confidence scoring and user validation. Process claims, invoices, contracts, and structured documents quickly and accurately. Maps unstructured content to structured formats with high precision.",
+      "key_technologies": [
+        "Azure AI Content Understanding",
+        "Azure OpenAI Service",
+        "Azure Blob Storage",
+        "Azure Cosmos DB"
+      ],
+      "languages": ["Python", "TypeScript", "Bicep"],
+      "prerequisites": [
+        "Azure AI Content Understanding Service access",
+        "Azure Storage Account",
+        "Azure Developer CLI (azd) v1.18.0+"
+      ],
+      "use_cases": [
+        "Contract processing",
+        "Invoice automation",
+        "Claims processing",
+        "Document classification",
+        "ID verification"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "unified-data-fabric",
+      "name": "Unified Data Foundation with Fabric",
+      "solution_area": "Azure (Data & AI)",
+      "technical_complexity": "L400",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator",
+      "description": "Establish a unified, integrated, and governed analytics platform using medallion lakehouse architecture in Microsoft Fabric. Enables data mesh concepts with domain schemas, shared data models, and seamless integration with Azure Databricks for multi-platform analytics.",
+      "key_technologies": [
+        "Microsoft Fabric",
+        "OneLake",
+        "Microsoft Purview",
+        "Azure Databricks"
+      ],
+      "languages": ["PySpark", "SQL", "Python"],
+      "prerequisites": [
+        "Fabric Capacity",
+        "Microsoft Purview access",
+        "Azure Databricks workspace (optional)"
+      ],
+      "use_cases": [
+        "Master data management",
+        "Cross-channel sales analytics",
+        "Finance data management",
+        "Governed analytics platform"
+      ],
+      "responsible_ai": false
+    },
+    {
+      "id": "agentic-unified-data",
+      "name": "Agentic Applications for Unified Data",
+      "solution_area": "AI",
+      "technical_complexity": "L400",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
+      "description": "Empower organizations with agentic AI solutions built on a unified data foundation. Leverage AI agents with seamless Fabric integration, Agent Framework orchestration, and natural language querying. Automate routine processes and enable business users to query trusted data easily.",
+      "key_technologies": [
+        "Agent Framework",
+        "Microsoft Fabric",
+        "Azure AI Foundry",
+        "Azure OpenAI Service"
+      ],
+      "languages": ["Python", "YAML", "JSON"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Microsoft Fabric capacity",
+        "Azure AI Foundry subscription",
+        "Azure OpenAI Service access"
+      ],
+      "use_cases": [
+        "Natural language data queries",
+        "Workflow automation",
+        "Business intelligence chatbots",
+        "Intelligent insights generation"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "rag-chat-your-data",
+      "name": "RAG Chat with Your Data",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/Azure-Samples/azure-search-openai-demo",
+      "description": "Create a ChatGPT-like frontend experience over your own documents using Retrieval-Augmented Generation (RAG). Uses Azure OpenAI Service for LLM access and Azure AI Search for indexing and semantic retrieval. Available in Python, TypeScript, .NET, and Java.",
+      "key_technologies": [
+        "Azure OpenAI Service",
+        "Azure AI Search",
+        "Azure App Service",
+        "Azure Cosmos DB"
+      ],
+      "languages": ["Python", "TypeScript", ".NET", "Java"],
+      "prerequisites": [
+        "Azure OpenAI Service access",
+        "Azure AI Search instance",
+        "Azure App Service",
+        "Azure Developer CLI (azd)"
+      ],
+      "use_cases": [
+        "Document Q&A",
+        "Enterprise search",
+        "Knowledge base chatbots",
+        "Internal documentation assistance"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "semantic-kernel",
+      "name": "Intelligent Apps with Semantic Kernel",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/semantic-kernel",
+      "description": "Enterprise-ready orchestration framework for building intelligent AI agents and multi-agent systems. Model-agnostic SDK supporting OpenAI, Azure OpenAI, Hugging Face, and more. Includes plugin ecosystem, vector DB integration, and multi-agent orchestration.",
+      "key_technologies": [
+        "Azure OpenAI Service",
+        "Azure AI Search",
+        "Semantic Kernel",
+        "Agent Framework"
+      ],
+      "languages": ["Python", ".NET", "Java"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Azure OpenAI Service access",
+        "Azure AI Foundry (optional)",
+        "Vector database (optional)"
+      ],
+      "use_cases": [
+        "Chatbot development",
+        "Agent orchestration",
+        "Multi-step reasoning",
+        "Plugin composition"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "fabric-samples",
+      "name": "Microsoft Fabric Samples",
+      "solution_area": "Azure (Data & AI)",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/fabric-samples",
+      "description": "Comprehensive samples repository showcasing Microsoft Fabric capabilities. Includes documentation samples, feature demonstrations, and community-contributed examples. Perfect for learning Fabric hands-on with real-world scenarios.",
+      "key_technologies": [
+        "Microsoft Fabric",
+        "OneLake",
+        "Power BI",
+        "Apache Spark"
+      ],
+      "languages": ["Python", "PySpark", "SQL"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Microsoft Fabric capacity",
+        "Azure Developer CLI (azd)"
+      ],
+      "use_cases": [
+        "Fabric learning",
+        "ETL/ELT patterns",
+        "Data analytics",
+        "Business intelligence"
+      ],
+      "responsible_ai": false
+    },
+    {
+      "id": "techconnect-rag-system",
+      "name": "TechConnect RAG System (Multi-Modal)",
+      "solution_area": "AI",
+      "technical_complexity": "L400",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/derricksobrien/poc-accelerator",
+      "description": "Advanced Retrieval-Augmented Generation (RAG) system ingesting GitHub solution accelerators and Microsoft documentation. Features vector-based semantic search, solution area filtering (AI, Cloud, Security, Data), complexity level filtering (L200-L400), and Responsible AI guardrails. Production-ready with Azure Container Apps deployment.",
+      "key_technologies": [
+        "FastAPI",
+        "Azure OpenAI Service",
+        "Azure Container Apps",
+        "Vector Search",
+        "Azure AI Search"
+      ],
+      "languages": ["Python", "JavaScript", "HTML/CSS"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Docker (for local development)",
+        "Azure Container Registry",
+        "Azure OpenAI Service access"
+      ],
+      "use_cases": [
+        "Solution accelerator discovery",
+        "POC generation",
+        "Technical recommendation",
+        "Architecture guidance",
+        "Responsible AI compliance"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "techconnect-ai-search",
+      "name": "TechConnect3: Azure AI Search Integration",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "c:/users/derri/code/techconnect_all/TechConnect3",
+      "description": "Complete implementation of Azure AI Search with Azure Cognitive Services. Demonstrates semantic search, vector indexing, Azure OpenAI integration, and Blob Storage-based document processing. Includes indexer configurations and query patterns for enterprise search scenarios.",
+      "key_technologies": [
+        "Azure AI Search",
+        "Azure Blob Storage",
+        "Azure OpenAI Service",
+        "Python",
+        "FastAPI"
+      ],
+      "languages": ["Python"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Azure AI Search instance",
+        "Azure Storage Account",
+        "Azure OpenAI Service access"
+      ],
+      "use_cases": [
+        "Document indexing",
+        "Semantic search",
+        "Vector search",
+        "Enterprise search platform"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "techconnect-data-fabric",
+      "name": "TechConnect4: Data Fabric & Analytics",
+      "solution_area": "Azure (Data & AI)",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "c:/users/derri/code/techconnect_all/TechConnect4",
+      "description": "Enterprise data analytics platform using Azure services. Combines AI Search for indexing, Blob Storage for data lakes, and Azure OpenAI for intelligent querying. Demonstrates modern data architecture patterns with assistant-based query interfaces.",
+      "key_technologies": [
+        "Azure Storage",
+        "Azure AI Search",
+        "Azure OpenAI Service",
+        "Python",
+        "FastAPI"
+      ],
+      "languages": ["Python", "JSON"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Azure Storage Account",
+        "Azure AI Search instance",
+        "Azure OpenAI Service access"
+      ],
+      "use_cases": [
+        "Data lake implementation",
+        "Analytics platform",
+        "Intelligent querying",
+        "Document management"
+      ],
+      "responsible_ai": false
+    },
+    {
+      "id": "techconnect-rag-advanced",
+      "name": "TechConnect5: Advanced RAG Patterns",
+      "solution_area": "AI",
+      "technical_complexity": "L400",
+      "delivery_readiness": "Gold Standard",
+      "repository": "c:/users/derri/code/techconnect_all/TechConnect5",
+      "description": "Advanced RAG implementation with sophisticated retrieval patterns, query rewriting, and multi-step reasoning. Includes solution accelerator testing, evaluation frameworks, and production deployment patterns for complex AI workflows.",
+      "key_technologies": [
+        "Azure AI Search",
+        "Azure OpenAI Service",
+        "FastAPI",
+        "Vector Search",
+        "Query Rewriting"
+      ],
+      "languages": ["Python"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Azure AI Search",
+        "Azure OpenAI Service",
+        "Python 3.10+"
+      ],
+      "use_cases": [
+        "Complex queries",
+        "Multi-step reasoning",
+        "Query optimization",
+        "RAG evaluation",
+        "Production deployment"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "techconnect-mvp",
+      "name": "TechConnect6: MVP Framework & Architecture",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "c:/users/derri/code/techconnect_all/techconnect6",
+      "description": "Complete MVP framework for building AI-powered applications. Includes quickstart guides, architecture documentation, deployment scripts, and reference implementations. Demonstrates best practices for moving from POC to production with proper governance and testing.",
+      "key_technologies": [
+        "FastAPI",
+        "Azure Container Apps",
+        "Azure OpenAI Service",
+        "Docker",
+        "Bicep"
+      ],
+      "languages": ["Python", "JavaScript", "Bicep"],
+      "prerequisites": [
+        "Azure Subscription",
+        "Docker",
+        "Azure Container Registry",
+        "Azure Developer CLI (azd)"
+      ],
+      "use_cases": [
+        "MVP development",
+        "Architecture design",
+        "Deployment automation",
+        "Production readiness",
+        "Team scaling"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "prompt-engineering-guide",
+      "name": "Guidance: Advanced Prompt Engineering",
+      "solution_area": "AI",
+      "technical_complexity": "L200",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/guidance",
+      "description": "Efficient programming paradigm for steering large language models. Control output structure with regex constraints, context-free grammars, and interleaved control flow. Reduces latency and cost while improving output quality through constrained generation.",
+      "key_technologies": [
+        "Guidance Framework",
+        "LLM Steering",
+        "Transformers",
+        "OpenAI",
+        "llama.cpp"
+      ],
+      "languages": ["Python", "YAML"],
+      "prerequisites": [
+        "Python 3.10+",
+        "LLM backend (OpenAI, Hugging Face, llama.cpp, etc)",
+        "pip package manager"
+      ],
+      "use_cases": [
+        "Structured output generation",
+        "Token optimization",
+        "Cost reduction",
+        "Chain-of-thought prompting",
+        "JSON generation"
+      ],
+      "responsible_ai": false
+    },
+    {
+      "id": "system2-poc-generator",
+      "name": "System2-RAG POC Generator (Active)",
+      "solution_area": "AI",
+      "technical_complexity": "L300",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/derricksobrien/poc-accelerator",
+      "description": "Live POC generation system using RAG with semantic search. Generates proof-of-concept proposals based on solution accelerator catalog. Features 4-tab interface: POC Generator, Solution Search, History, System Status. Auto-detects environment (local/Azure) for API routing.",
+      "key_technologies": [
+        "FastAPI",
+        "React/Vanilla JS",
+        "Azure Container Apps",
+        "Vector Search",
+        "Azure OpenAI"
+      ],
+      "languages": ["Python", "JavaScript", "HTML/CSS"],
+      "prerequisites": [
+        "Azure Container Apps access",
+        "Modern web browser",
+        "Internet connectivity"
+      ],
+      "use_cases": [
+        "Quick POC generation",
+        "Solution discovery",
+        "Architecture recommendations",
+        "Technical proposal generation"
+      ],
+      "responsible_ai": true
+    },
+    {
+      "id": "guidance-prompt-framework",
+      "name": "Guidance: Advanced Prompt Engineering",
+      "solution_area": "AI",
+      "technical_complexity": "L200",
+      "delivery_readiness": "Gold Standard",
+      "repository": "https://github.com/microsoft/guidance",
+      "description": "Structured prompt engineering framework for precise LLM output. Uses constrained generation, context-free grammars, and interleaved control flow. Enables high-quality output generation with reduced latency and cost compared to traditional prompting.",
+      "key_technologies": [
+        "Guidance SDK",
+        "LLM Orchestration",
+        "Transformers",
+        "OpenAI"
+      ],
+      "languages": ["Python"],
+      "prerequisites": [
+        "Python 3.8+",
+        "LLM access (OpenAI or local)",
+        "pip"
+      ],
+      "use_cases": [
+        "Structured output",
+        "Token reduction",
+        "Cost optimization",
+        "Template-based generation"
+      ],
+      "responsible_ai": false
+    }
+  ],
+  "solution_areas": [
+    {
+      "id": "AI",
+      "name": "AI",
+      "description": "Artificial Intelligence, machine learning, and agentic systems",
+      "count": 10
+    },
+    {
+      "id": "Azure (Data & AI)",
+      "name": "Azure (Data & AI)",
+      "description": "Data platforms, analytics, and AI infrastructure on Azure",
+      "count": 3
+    },
+    {
+      "id": "Cloud & AI Platforms",
+      "name": "Cloud & AI Platforms",
+      "description": "Multi-cloud and hybrid AI platform solutions",
+      "count": 2
+    }
+  ],
+  "complexity_levels": {
+    "L200": {
+      "description": "Fundamentals and quick starts",
+      "estimated_hours": "4-8",
+      "target_audience": ["Developers", "Architects"]
+    },
+    "L300": {
+      "description": "Intermediate to advanced implementations",
+      "estimated_hours": "16-40",
+      "target_audience": ["Senior Developers", "Solution Architects", "Technical Leads"]
+    },
+    "L400": {
+      "description": "Enterprise-grade production systems",
+      "estimated_hours": "40-100",
+      "target_audience": ["Enterprise Architects", "Principal Engineers", "Technical Strategists"]
+    }
+  }
+}
