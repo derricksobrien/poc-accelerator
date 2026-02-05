@@ -581,6 +581,27 @@ See [PRODUCTION_DEPLOYMENT.md](PRODUCTION_DEPLOYMENT.md) for detailed instructio
 
 ---
 
+## ⚠️ PENDING TASK: TechConnect2 Repository Addition
+
+**Status**: ⏳ **ACTION REQUIRED**
+
+**Issue**: The `TechConnect2` folder exists elsewhere but is **NOT YET** included in this GitHub repository. For project completeness, it should be added alongside the other TechConnect folders (TechConnect/, TechConnect3/, TechConnect4/, TechConnect5/, techconnect6/).
+
+**Action Required**:
+1. On the machine with Docker available, clone this repository: `git clone https://github.com/YOUR_ORG/techconnect_all.git`
+2. Copy your local TechConnect2 folder into the cloned repository structure
+3. Add to git: `git add TechConnect2/`
+4. Commit: `git commit -m "Add: TechConnect2 solution folder"`
+5. Push to master: `git push origin master`
+
+After completing this task, you can proceed with the System2-RAG Docker rebuild using `REBUILD_INSTRUCTIONS.md`.
+
+**Related Files**:
+- [System2-RAG/REBUILD_INSTRUCTIONS.md](System2-RAG/REBUILD_INSTRUCTIONS.md) - Docker rebuild guide
+- [GITHUB_PUSH_GUIDE.md](GITHUB_PUSH_GUIDE.md) - Detailed GitHub operations guide
+
+---
+
 ## 📞 Quick Links
 
 - **Getting Started**: [GETTING_STARTED.md](GETTING_STARTED.md)

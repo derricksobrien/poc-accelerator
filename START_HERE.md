@@ -25,6 +25,32 @@ A **complete, production-grade Retrieval-Augmented Generation (RAG) system** tha
 
 ---
 
+## ⚠️ **ATTENTION: Administrator Action Required**
+
+**TechConnect2 Repository Completion**
+
+The `TechConnect2` folder needs to be added to this GitHub repository for project completeness. Follow these steps on the machine with Docker available:
+
+```powershell
+# 1. Clone the repository
+git clone https://github.com/YOUR_ORG/techconnect_all.git
+cd techconnect_all
+
+# 2. Copy TechConnect2 folder into repo structure
+Copy-Item -Path "path\to\your\TechConnect2" -Destination ".\TechConnect2" -Recurse
+
+# 3. Commit and push to GitHub
+git add TechConnect2/
+git commit -m "Add: TechConnect2 solution folder"
+git push origin master
+```
+
+**After completing TechConnect2 addition**, proceed with Docker rebuild using [REBUILD_INSTRUCTIONS.md](System2-RAG/REBUILD_INSTRUCTIONS.md).
+
+See [PROJECT_INDEX.md](PROJECT_INDEX.md) for more details.
+
+---
+
 ## 🚀 Start Here
 
 ### **First Time?**
