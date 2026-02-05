@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-04T22:06:45.984756",
+  "timestamp": "2026-02-04T22:12:38.084499",
   "target_url": "https://rag-system2-api.purplefield-e5b9c49f.eastus.azurecontainerapps.io",
   "summary": {
     "total": 11,
@@ -24,13 +24,13 @@
       "test": "Static: script.js",
       "status": "PASS",
       "details": "Loaded (11729 bytes)",
-      "response_time": 1664.243221282959
+      "response_time": 1539.6978855133057
     },
     {
       "test": "Static: style.css",
       "status": "PASS",
       "details": "Loaded (6587 bytes)",
-      "response_time": 276.9036293029785
+      "response_time": 310.7106685638428
     },
     {
       "test": "API URL Detection",
@@ -42,37 +42,37 @@
       "test": "POC Generation",
       "status": "PASS",
       "details": "Generated POC ID: poc-test-poc-after-rebuild",
-      "response_time": 300.6715774536133
+      "response_time": 293.33949089050293
     },
     {
       "test": "Semantic Search",
       "status": "PASS",
       "details": "API responded with results",
-      "response_time": 265.06948471069336
+      "response_time": 292.0095920562744
     },
     {
       "test": "History Endpoint",
       "status": "PASS",
       "details": "Retrieved 1 POCs",
-      "response_time": 280.8876037597656
+      "response_time": 318.1886672973633
     },
     {
       "test": "CORS Headers",
       "status": "PASS",
       "details": "CORS properly configured",
-      "response_time": 285.46643257141113
+      "response_time": 316.072940826416
     },
     {
       "test": "Performance Benchmark",
       "status": "PASS",
-      "details": "Avg: 279ms | Min: 259ms | Max: 298ms",
+      "details": "Avg: 303ms | Min: 300ms | Max: 306ms",
       "response_time": 0
     },
     {
       "test": "No Fetch Errors",
       "status": "PASS",
       "details": "API call succeeded (no CORS failure)",
-      "response_time": 284.4867706298828
+      "response_time": 299.588680267334
     }
   ]
 }
