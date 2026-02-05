@@ -51,6 +51,35 @@ See [PROJECT_INDEX.md](PROJECT_INDEX.md) for more details.
 
 ---
 
+## ⚠️ **PENDING: System2-RAG Docker Rebuild**
+
+**Wait!** Before proceeding with TechConnect2 addition, the System2-RAG Docker image needs to be rebuilt with the corrected source code now in GitHub.
+
+**Branch**: `master` ← **Use this branch**  
+**Location**: [System2-RAG/NEXT_REBUILD.md](System2-RAG/NEXT_REBUILD.md)  
+
+### Quick Checklist (On Docker Machine)
+
+```powershell
+# 1. Get latest code
+git pull origin master
+
+# 2. Verify fix is present
+Select-String -Path "System2-RAG/static/script.js" -Pattern "getAPIBaseURL"
+
+# 3. Build and deploy
+cd System2-RAG
+docker build -t rag-system2:latest .
+docker tag rag-system2:latest acrragsystem202041846.azurecr.io/rag-system2:latest
+docker push acrragsystem202041846.azurecr.io/rag-system2:latest
+az containerapp update --name rag-system2-api --resource-group rg-poc-accelerator --image acrragsystem202041846.azurecr.io/rag-system2:latest
+```
+
+**Time Required**: ~15-20 minutes  
+**Detailed Instructions**: See [System2-RAG/NEXT_REBUILD.md](System2-RAG/NEXT_REBUILD.md)
+
+---
+
 ## 🚀 Start Here
 
 ### **First Time?**

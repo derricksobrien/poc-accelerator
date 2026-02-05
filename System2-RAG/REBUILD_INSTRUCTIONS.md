@@ -2,7 +2,9 @@
 
 **Status**: Ready for rebuild on another machine  
 **Date**: February 4, 2026  
-**Branch**: `main` (or your current branch)
+**Branch**: `master` ← **USE THIS BRANCH**
+
+⚠️ **QUICKSTART**: See [NEXT_REBUILD.md](NEXT_REBUILD.md) for the fastest path to deployment
 
 ---
 
