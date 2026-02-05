@@ -19,7 +19,7 @@ from collections import Counter
 from typing import List, Dict, Optional
 
 # Import CSA enhancements
-from csa_enhancements import (
+from .csa_enhancements import (
     get_rbac_requirements,
     get_cli_commands,
     get_validation_script,
