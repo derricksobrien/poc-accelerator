@@ -1,0 +1,117 @@
+{
+  "scenario": "Content Processing with RAG Agents",
+  "composite_sources": [
+    "multi-agent-automation"
+  ],
+  "source_repos": {
+    "multi-agent-automation": {
+      "solution_area": "AI",
+      "complexity": "L400",
+      "description": "Solution accelerator for SolutionAreaEnum.AI"
+    }
+  },
+  "integrated_architecture": {
+    "components": [
+      {
+        "index": 1,
+        "repo_id": "multi-agent-automation",
+        "role": "AI/ML Processing",
+        "solution_area": "AI",
+        "key_services": [],
+        "layer": "layer_0"
+      }
+    ],
+    "data_flows": [],
+    "diagram_ascii": "┌─────────────────────────────┐\n│ multi-agent-automation       │\n│ (AI/ML Processing          ) │\n└─────────────────────────────┘",
+    "integration_pattern": "Single Component"
+  },
+  "synthesized_instructions": "# Integrated Lab: Content Processing with RAG Agents\n\n## Overview\nThis lab combines 1 accelerators to build a complete solution:\n\n\n### 1. Multi Agent Automation\n**Solution Area:** SolutionAreaEnum.AI  \n**Complexity:** ComplexityLevel.L400  \n**Role in Architecture:** AI/ML Processing  \n\nSolution accelerator for SolutionAreaEnum.AI\n\n\n## Integration Architecture\n\nThis lab follows a multi-layer architecture:\n\n1. **Data Layer**: Ingests and prepares data from source systems\n2. **Processing Layer**: Applies AI/ML transformations or analytics\n3. **Governance Layer**: Enforces compliance, auditing, and data protection policies\n4. **Application Layer**: Exposes insights to end users or downstream systems\n\n## Step-by-Step Instructions\n\n### Phase 1: Prerequisites & Setup\n- [ ] Create Azure subscription and required resources\n- [ ] Configure service principal for authentication\n- [ ] Set up local development environment with Python 3.10+\n- [ ] Clone all required repositories\n\n### Phase 2: Deploy Component 1 (multi-agent-automation)\n- [ ] Follow deployment guide in multi-agent-automation repository\n- [ ] Configure environment variables for AI/ML Processing\n- [ ] Validate component is operational\n- [ ] Test core functionality\n\n\n### Phase Final: End-to-End Testing & Validation\n- [ ] Execute full data pipeline from source to destination\n- [ ] Verify all data flows match architecture diagram\n- [ ] Test governance policies and audit logging\n- [ ] Generate sample reports/dashboards\n- [ ] Document results and lessons learned\n\n## Data Flow\n\n\n## Success Criteria\n\n✅ All components deployed and operational  \n✅ Data flows successfully through entire pipeline  \n✅ Governance policies active and auditing enabled  \n✅ End-to-end test scenario completed successfully  \n✅ Performance meets baseline requirements  \n\n## Troubleshooting\n\nSee individual accelerator READMEs for component-specific troubleshooting.\n\n## Next Steps\n\nAfter completing this lab:\n1. Extend with additional data sources\n2. Customize business logic for your use case\n3. Scale to production with monitored deployments\n4. Integrate with existing enterprise systems\n",
+  "deployment_steps": [
+    {
+      "sequence": 1,
+      "phase": "Prerequisites",
+      "title": "Create Azure resources and authentication",
+      "description": "Set up service principals, resource groups, and access controls",
+      "commands": [
+        "az group create --name tech-connect --location eastus",
+        "az identity create --name techconnect-identity --resource-group tech-connect"
+      ],
+      "estimated_minutes": 10,
+      "depends_on": []
+    },
+    {
+      "sequence": 2,
+      "phase": "Deploy Component 1",
+      "title": "Deploy multi-agent-automation",
+      "description": "Follow multi-agent-automation deployment guide",
+      "repo_source": "multi-agent-automation",
+      "commands": [
+        "cd repos/multi-agent-automation",
+        "az deployment group create --template-file main.bicep --resource-group tech-connect"
+      ],
+      "estimated_minutes": 20,
+      "depends_on": [
+        1
+      ]
+    },
+    {
+      "sequence": 3,
+      "phase": "Integration",
+      "title": "Validate end-to-end data flow",
+      "description": "Test pipeline from source through all components",
+      "commands": [
+        "python test_integration.py",
+        "pytest --verbose"
+      ],
+      "estimated_minutes": 15,
+      "depends_on": [
+        2
+      ]
+    }
+  ],
+  "merged_assets": {
+    "deployment_scripts": [
+      {
+        "repo": "multi-agent-automation",
+        "script_name": "multi-agent-automation_deploy.sh",
+        "execution_order": 1,
+        "description": "Deploy multi-agent-automation component"
+      }
+    ],
+    "configuration_templates": [
+      {
+        "repo": "multi-agent-automation",
+        "template_type": "bicep",
+        "file_name": "multi-agent-automation_deploy.bicep",
+        "description": "IaC template for multi-agent-automation"
+      }
+    ],
+    "sample_code_languages": [
+      {
+        "repo": "multi-agent-automation",
+        "language": "python",
+        "file": "main.py"
+      },
+      {
+        "repo": "multi-agent-automation",
+        "language": "typescript",
+        "file": "index.ts"
+      }
+    ],
+    "integration_points": []
+  },
+  "prerequisites": [
+    "Azure CLI (version 2.40+)",
+    "Azure subscription with Contributor role",
+    "Basic understanding of LLMs and embeddings",
+    "Git (version 2.30+)",
+    "GitHub account",
+    "Knowledge of vector databases",
+    "OpenAI API key or Azure OpenAI resource",
+    "Python 3.10+",
+    "Visual Studio Code or IDE of choice"
+  ],
+  "estimated_duration_hours": 3.0,
+  "responsible_ai_tag": true,
+  "rai_disclaimer": "⚠️ **RESPONSIBLE AI NOTICE - INTEGRATED SYSTEM**\n\nThis lab combines multiple accelerators, including AI/ML components. \nCritical governance considerations:\n\n**Component-Level Risks:**\n\n• **multi-agent-automation**: \n  - Ensure input data quality before LLM processing\n  - Monitor model outputs for hallucinations or bias\n  - Implement comprehensive audit logging for all AI decisions\n  - Set up alerts for unusual prompt patterns\n\n\n**Cross-System Risks:**\n• **Data Isolation**: Data flowing between components may leak sensitive information\n  → Action: Implement encryption in transit (TLS 1.3) and at rest (AES-256)\n\n• **Governance Ordering**: Deploy governance/Purview BEFORE AI components go live\n  → Action: Configure DSPM for AI and data loss prevention policies first\n\n• **Audit Trail**: Ensure end-to-end lineage tracking across all components\n  → Action: Enable audit logging in Purview and AI services\n\n• **Access Control**: Verify service principals have least-privilege permissions\n  → Action: Review RBAC assignments regularly using Azure Policies\n\n**Compliance Checklist:**\n□ Data residency meets regulatory requirements\n□ Audit logging enabled and monitored\n□ Encryption configured for data in motion and at rest\n□ Access controls follow principle of least privilege\n□ Regular penetration testing scheduled\n□ Incident response plan documented\n\n**References:**\n• Microsoft Responsible AI: https://learn.microsoft.com/en-us/ai/responsible-ai/\n• Azure Security Best Practices: https://learn.microsoft.com/en-us/azure/security/\n• DSPM for AI: https://learn.microsoft.com/en-us/defender-for-cloud/dspm-for-ai"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Content Processing with RAG Agents",
+  "description": "Extract insights from documents and build AI agents for retrieval-augmented generation",
+  "solution_area": "AI",
+  "secondary_areas": [
+    "Azure (Data & AI)"
+  ],
+  "is_composite": true,
+  "num_repos": 2
+}

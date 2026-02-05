@@ -1,0 +1,279 @@
+{
+  "catalog_metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-01-20",
+    "authoritative_source": "GitHub Repos + TechConnect Ingestion",
+    "governance_standard": "Responsible AI (RAI) / Microsoft TechConnect '26"
+  },
+  "solution_accelerators": [
+    {
+      "id": "multi-agent-automation",
+      "name": "Multi-Agent Custom Automation Engine",
+      "solution_area": "AI",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L400",
+      "repository_url": "https://github.com/microsoft/Solution-Accelerators",
+      "description": "Delegate complex, repetitive tasks to AI agents that act on your behalf\u00e2\u20ac\u201dexecuting work efficiently and ensuring results align with standards.",
+      "products_and_services": [
+        "Azure AI Foundry Models",
+        "Azure AI Foundry Agent Service",
+        "Agent Framework",
+        "Azure Container Apps",
+        "Azure Cosmos DB",
+        "Foundry IQ"
+      ],
+      "languages": [
+        "TypeScript",
+        "Bicep",
+        "Python"
+      ],
+      "prerequisites": [
+        "Azure Subscription with Owner access",
+        "Azure OpenAI Service approval",
+        "Azure AI Foundry quota"
+      ],
+      "responsible_ai_tag": true,
+      "deployment_type": "Bicep/azd"
+    },
+    {
+      "id": "content-processing",
+      "name": "Content Processing Accelerator",
+      "solution_area": "AI",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L300",
+      "repository_url": "https://github.com/microsoft/content-processing-solution-accelerator",
+      "description": "# Content processing solution accelerator\nExtract data and apply schemas across your multi-modal content, with confidence scoring and user validation enabling greater speed of data ingestion. Process claims, invoices, contracts and other documents quickly and accurately by extracting information from unstructured content and mapping it to a structured format. This template supports text, images, tables and graphs.\n\nThese capabilities can be applied to numerous use cases including: contract processing, claims processing, invoice processing, ID verification, and clinician-patient visit record summarization. \n\n<br/>\n\n<div align=\"center\">\n  \n[**SOLUTION OVERVIEW**](#solution-overview)  \\| [**QUICK DEPLOY**](#quick-deploy)  \\| [**BUSINESS SCENARIO**](#business-scenario)  \\| [**SUPPORTING DOCUMENTATION**](#supporting-documentation)\n\n</div>\n<br/>\n\n **Note:** With any AI solutions you create using these templates, you are responsible for assessing all associated risks and for complying with all applicable laws and safety standards. Learn more in the transparency documents for [Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/agents/transparency-note) and [Agent Framework](https://github.com/microsoft/agent-framework/blob/main/TRANSPARENCY_FAQ.md).\n<br/>\n\n<h2><img src=\"./docs/images/readme/solution-overview.png\" width=\"48\" />\nSolution overview\n</h2>\n\nThis accelerator leverages Azure AI Foundry, Azure AI Content Understanding Service, Azure OpenAI Service, Azure Blob Storage, Azure Cosmos DB, and Azure Container Apps to transform large volumes of unstructured content through event-driven processing pipelines for integration into downstream applications and post-processing activities. Processing, extraction and data schema transformation steps are scored for accuracy to automate processing and identify as-needed human validation.\n\n### Solution architecture\n|![image](./docs/images/readme/solution-architecture.png)|\n|---|\n\n\n### How to customize\nIf",
+      "products_and_services": [
+        "Azure AI Foundry Models",
+        "Azure AI Content Understanding",
+        "Azure Cosmos DB",
+        "Azure Container Apps"
+      ],
+      "languages": [
+        "Bicep",
+        "TypeScript",
+        "Python"
+      ],
+      "prerequisites": [
+        "Azure AI Content Understanding Service access",
+        "Azure Storage Account",
+        "Azure Developer CLI (azd) v1.18.0+"
+      ],
+      "responsible_ai_tag": true,
+      "deployment_type": "Bicep/azd"
+    },
+    {
+      "id": "unified-data-fabric",
+      "name": "Unified Data Foundation with Fabric",
+      "solution_area": "Azure (Data & AI)",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L400",
+      "repository_url": "https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator",
+      "description": "Establish a unified, integrated, and governed analytics platform using medallion lakehouse architecture in Microsoft Fabric.",
+      "products_and_services": [
+        "Microsoft Fabric",
+        "OneLake",
+        "Microsoft Purview",
+        "Azure Databricks"
+      ],
+      "languages": [
+        "PySpark Notebooks",
+        "SQL",
+        "Python"
+      ],
+      "prerequisites": [
+        "Fabric Capacity",
+        "Microsoft Purview scanning permissions",
+        "Azure Databricks workspace (for mirroring)"
+      ],
+      "responsible_ai_tag": false,
+      "deployment_type": "Fabric Automated Deployment"
+    },
+    {
+      "id": "solution-accelerators",
+      "name": "Microsoft Solution Accelerators",
+      "solution_area": "AI",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L400",
+      "repository_url": "https://github.com/microsoft/solution-accelerators.git",
+      "description": "# \ud83d\udc19 Website upgraded and relocated\n\nSlide on over to our new site for a better, brighter experience.\nVisit [https://accelerators.ms](https://accelerators.ms) to see a full list of our solution accelerators.",
+      "products_and_services": [
+        "Azure Services"
+      ],
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "JavaScript"
+      ],
+      "prerequisites": [
+        "Azure Subscription",
+        "Git CLI",
+        "Azure Developer CLI (azd)"
+      ],
+      "responsible_ai_tag": true,
+      "deployment_type": "Git/Source"
+    },
+    {
+      "id": "fabric-data-foundation",
+      "name": "Unified Data Foundation with Fabric",
+      "solution_area": "Azure (Data & AI)",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L400",
+      "repository_url": "https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator.git",
+      "description": "# Unified data foundation with Fabric solution accelerator\n\nThis solution accelerator provides a unified data foundation with integrated data architecture leveraging Microsoft Fabric, OneLake, Microsoft Purview, and Azure Databricks to deliver a unified, integrated, and governed analytics platform.\n\nBuilt with principles of [medallion lakehouse architecture](https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture), the solution accelerator supports data mesh concepts with a sample implementation. It provides domain schemas and sample data as a framework for shared domains (customer, product), finance, and sales across multiple channels. You can easily adopt the framework and update the domain models with your own. The solution seamlessly integrates sales channel data hosted in Azure Databricks, utilizing Fabric's data mirroring and shortcut to bring this data into the gold tier for unified analytics and reporting. Pre-built Power BI dashboards showcase advanced sales analytics. Advanced data governance is powered by Microsoft Purview, ensuring compliance and transparency.\n\nThis solution accelerator demonstrates how organizations can unify, govern, and analyze data across multiple domains and platforms using modern lakehouse architecture and robust governance, enabling rapid development of analytics solutions for diverse business needs.\n\nWe have built flexibility and options so that you do not have to provision all three platforms (Microsoft Fabric, Microsoft Purview, and Azure Databricks) all at once. Please see details in the Solution Overview section below for more details.\n\n**Key use cases include:**\n\n- Unified data platform uses Microsoft Fabric as core architecture components, with choices for integration with other platforms\n- Customer and product master data management (data models, source file processing, data validation, consolidations)\n- Sales analytics across data stored in Fabric and Azure Databricks\n- Finance data manag",
+      "products_and_services": [
+        "Microsoft Purview",
+        "Microsoft Fabric",
+        "Azure Databricks"
+      ],
+      "languages": [
+        "YAML",
+        "Python",
+        "JSON"
+      ],
+      "prerequisites": [
+        "Azure Subscription",
+        "Git CLI",
+        "Azure Developer CLI (azd)",
+        "Microsoft Fabric capacity",
+        "Azure Databricks workspace",
+        "Microsoft Purview instance"
+      ],
+      "responsible_ai_tag": false,
+      "deployment_type": "Git/Source"
+    },
+    {
+      "id": "agentic-unified-data",
+      "name": "Agentic Applications for Unified Data Foundation",
+      "solution_area": "AI",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L400",
+      "repository_url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator.git",
+      "description": "# Agentic Applications for Unified Data Foundation\n\n<br/>\nThis solution accelerator empowers organizations to make faster, smarter decisions at scale by leveraging agentic AI solutions built on a unified data foundation with Microsoft Fabric. With seamless integration of Microsoft Foundry agents and Agent Framework orchestration, teams can design intelligent workflows that automate routine processes, streamline operations, and enable natural language querying across enterprise datasets. This ensures that governed, high-quality data is accessible not only to technical specialists but also to business users, creating a shared environment where insights are surfaced more easily and decisions are grounded in trusted information. By unifying data access and applying AI in the flow of work, organizations gain the agility to respond rapidly to changing business needs, foster collaboration across teams, and drive innovation with greater confidence.\n\n<br/>\n\n<br/>\n<div align=\"center\">\n  \n[**SOLUTION OVERVIEW**](#solution-overview)  \\| [**QUICK DEPLOY**](#quick-deploy)  \\| [**BUSINESS SCENARIO**](#business-scenario)  \\| [**SUPPORTING DOCUMENTATION**](#supporting-documentation)\n\n</div>\n<br/>\n\n **Note:** With any AI solutions you create using these templates, you are responsible for assessing all associated risks and for complying with all applicable laws and safety standards. Learn more in the transparency documents for [Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/agents/transparency-note) and [Agent Framework](https://github.com/microsoft/agent-framework/blob/main/TRANSPARENCY_FAQ.md).\n<br/>\n\n<h2><img src=\"./documents/Images/ReadMe/solution-overview.png\" width=\"48\" />\nSolution overview\n</h2>\n\n\nLeverages the Unified Data Foundation in Fabric accelerator, SQL Database in Fabric, Agent Framework, and AI Foundry to query structured data. Structured data sets are analyzed through intelligent and orchestrated responses powered by an interactive w",
+      "products_and_services": [
+        "Agent Framework",
+        "Microsoft Fabric",
+        "Azure AI Foundry"
+      ],
+      "languages": [
+        "YAML",
+        "Python",
+        "JSON"
+      ],
+      "prerequisites": [
+        "Azure Subscription",
+        "Git CLI",
+        "Azure Developer CLI (azd)",
+        "Microsoft Fabric capacity",
+        "Azure AI Foundry subscription"
+      ],
+      "responsible_ai_tag": true,
+      "deployment_type": "Git/Source"
+    },
+    {
+      "id": "ai-chat",
+      "name": "Azure AI Chat with Your Data",
+      "solution_area": "AI",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L300",
+      "repository_url": "https://github.com/Azure-Samples/azure-search-openai-demo.git",
+      "description": "<!--\n---\nname: RAG chat app with your data (Python)\ndescription: Chat with your domain data using Azure OpenAI and Azure AI Search.\nlanguages:\n- python\n- typescript\n- bicep\n- azdeveloper\nproducts:\n- azure-openai\n- azure-cognitive-search\n- azure-app-service\n- azure\npage_type: sample\nurlFragment: azure-search-openai-demo\n---\n-->\n\n# RAG chat app with Azure OpenAI and Azure AI Search (Python)\n\nThis solution creates a ChatGPT-like frontend experience over your own documents using RAG (Retrieval Augmented Generation). It uses Azure OpenAI Service to access GPT models, and Azure AI Search for data indexing and retrieval.\n\nThis solution's backend is written in Python. There are also [**JavaScript**](https://aka.ms/azai/js/code), [**.NET**](https://aka.ms/azai/net/code), and [**Java**](https://aka.ms/azai/java/code) samples based on this one. Learn more about [developing AI apps using Azure AI Services](https://aka.ms/azai).\n\n[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)\n[![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/azure-search-openai-demo)\n[![Open in VS Code for the Web](https://img.shields.io/static/v1?style=for-the-badge&label=VS+Code+for+the+Web&message=Open&color=purple&logo=visualstudiocode)](https://vscode.dev/azure?azdTemplateUrl=https://github.com/azure-samples/azure-search-openai-demo)\n\n## Important Security Notice\n\nThis template, the application code and configuration it contains, has been built to showcase Microsoft Azure specific services and tools. We stro",
+      "products_and_services": [
+        "Azure AI Foundry",
+        "Azure OpenAI Service"
+      ],
+      "languages": [
+        "Python",
+        "YAML",
+        "JSON",
+        "TypeScript"
+      ],
+      "prerequisites": [
+        "Azure Subscription",
+        "Git CLI",
+        "Azure Developer CLI (azd)",
+        "Azure OpenAI Service access"
+      ],
+      "responsible_ai_tag": true,
+      "deployment_type": "Git/Source"
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt Engineering Guide",
+      "solution_area": "AI",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L200",
+      "repository_url": "https://github.com/microsoft/guidance.git",
+      "description": "<div align=\"right\"></div>\n<div align=\"center\"><picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/figures/guidance_logo_blue_dark.svg\">\n  <img alt=\"guidance\" src=\"docs/figures/guidance_logo_blue.svg\" width=300\">\n</picture></div>\n<br/>\n\n**Guidance is an efficient programming paradigm for steering language models.** With Guidance, you can control how output is structured and get high-quality output for your use case\u2014*while reducing latency and cost vs. conventional prompting or fine-tuning.* It allows users to constrain generation (e.g. with regex and CFGs) as well as to interleave control (conditionals, loops, tool use) and generation seamlessly.\n\n   * [Install](#install)\n   * [Features](#features)\n\n\n## Install\nGuidance is available through PyPI and supports a variety of backends (Transformers, llama.cpp, OpenAI, etc.).\nIf you already have the backend required for your model, you can simply run\n```bash\npip install guidance\n```\n\n## Features\n\n### A Pythonic interface for language models\n\nWhen using Guidance, you can work with large language models using common Python idioms:\n\n```python\nfrom guidance import system, user, assistant, gen\nfrom guidance.models import Transformers\n\n# Could also do LlamaCpp or many other models\nphi_lm = Transformers(\"microsoft/Phi-4-mini-instruct\")\n\n# Model objects are immutable, so this is a copy\nlm = phi_lm\n\nwith system():\n    lm += \"You are a helpful assistant\"\n\nwith user():\n    lm += \"Hello. What is your name?\"\n\nwith assistant():\n    lm += gen(max_tokens=20)\n\nprint(lm)\n```\nIf run at the command line, this will produce output like:\n```\n<|system|>You are a helpful assistant<|end|><|user|>Hello. What is your name?<|end|><|assistant|>I am Phi, an AI developed by Microsoft. How can I help you today?\n```\nHowever, if running in a Jupyter notebook, then Guidance provides a widget for a richer user experience:\n\n<img src=\"docs/figures/widget_basic_example_20250703.png\" alt=\"Guidance widget showing HTML generation\" />\n\nWith Guidanc",
+      "products_and_services": [
+        "Azure Services"
+      ],
+      "languages": [
+        "Python",
+        "JavaScript",
+        "YAML",
+        "JSON"
+      ],
+      "prerequisites": [
+        "Azure Subscription",
+        "Git CLI",
+        "Azure Developer CLI (azd)",
+        "Azure OpenAI Service access"
+      ],
+      "responsible_ai_tag": false,
+      "deployment_type": "Git/Source"
+    },
+    {
+      "id": "intelligent-app",
+      "name": "Intelligent Apps with Semantic Kernel",
+      "solution_area": "AI",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L300",
+      "repository_url": "https://github.com/microsoft/semantic-kernel.git",
+      "description": "# Semantic Kernel\n\n**Build intelligent AI agents and multi-agent systems with this enterprise-ready orchestration framework**\n\n[![License: MIT](https://img.shields.io/github/license/microsoft/semantic-kernel)](https://github.com/microsoft/semantic-kernel/blob/main/LICENSE)\n[![Python package](https://img.shields.io/pypi/v/semantic-kernel)](https://pypi.org/project/semantic-kernel/)\n[![Nuget package](https://img.shields.io/nuget/vpre/Microsoft.SemanticKernel)](https://www.nuget.org/packages/Microsoft.SemanticKernel/)\n[![Discord](https://img.shields.io/discord/1063152441819942922?label=Discord&logo=discord&logoColor=white&color=d82679)](https://aka.ms/SKDiscord)\n\n\n## What is Semantic Kernel?\n\nSemantic Kernel is a model-agnostic SDK that empowers developers to build, orchestrate, and deploy AI agents and multi-agent systems. Whether you're building a simple chatbot or a complex multi-agent workflow, Semantic Kernel provides the tools you need with enterprise-grade reliability and flexibility.\n\n## System Requirements\n\n- **Python**: 3.10+\n- **.NET**: .NET 10.0+ \n- **Java**: JDK 17+\n- **OS Support**: Windows, macOS, Linux\n\n## Key Features\n\n- **Model Flexibility**: Connect to any LLM with built-in support for [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [Hugging Face](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/) and more\n- **Agent Framework**: Build modular AI agents with access to tools/plugins, memory, and planning capabilities\n- **Multi-Agent Systems**: Orchestrate complex workflows with collaborating specialist agents\n- **Plugin Ecosystem**: Extend with native code functions, prompt templates, OpenAPI specs, or Model Context Protocol (MCP)\n- **Vector DB Support**: Seamless integration with [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search), [Elasticsearch](https://www",
+      "products_and_services": [
+        "Azure AI Foundry",
+        "Agent Framework",
+        "Azure OpenAI Service"
+      ],
+      "languages": [
+        "JSON",
+        "YAML",
+        "Python"
+      ],
+      "prerequisites": [
+        "Azure Subscription",
+        "Git CLI",
+        "Azure Developer CLI (azd)",
+        "Azure OpenAI Service access",
+        "Azure AI Foundry subscription"
+      ],
+      "responsible_ai_tag": true,
+      "deployment_type": "Git/Source"
+    },
+    {
+      "id": "fabric-samples",
+      "name": "Microsoft Fabric Samples",
+      "solution_area": "Azure (Data & AI)",
+      "delivery_readiness": "Gold Standard",
+      "technical_complexity": "L300",
+      "repository_url": "https://github.com/microsoft/fabric-samples.git",
+      "description": "![Microsoft Logo](./media/microsoft-logo-small.png)\n\n# Microsoft Fabric Samples\n\nWelcome to the Microsoft Fabric samples repository! This repository is designed to help you explore and learn about Microsoft Fabric.  It provides hands-on examples and resources. Whether you're new to Microsoft Fabric or looking to deepen your understanding, you'll find valuable insights and tools here.\n\n## What's Inside\n\nThis repository is organized into different sections to help you navigate through various samples and resources easily.\n\n### [Documentation Samples](./docs-samples)\n\n- **Location:** `docs-samples` folder.\n- **Description:** These samples are referenced within the [Microsoft Fabric official documentation](https://aka.ms/fabric-docs) and Learn training content. They include both code examples and sample data.\n\n### [Features Samples](./features-samples/)\n\n- **Location:** `features-samples` folder.\n- **Description:** These samples focus on specific features of Microsoft Fabric, demonstrating how to leverage them in your projects.\n\n### [Community Samples](./community-samples/)\n\n- **Location:** `community-samples` folder.\n- **Description:** These samples have been created by our community. They showcase creative ways to use Microsoft Fabric and provide valuable insights into real-world scenarios.\n  \n## Learning Resources\n\n### Microsoft Learn\n\nIf you're beginning your Microsoft Fabric journey, the [Fabric Learning Path](https://learn.microsoft.com/training/paths/get-started-fabric/) on Microsoft Learn is an excellent place to start. It offers a series of free, self-paced modules that introduce the basics.\n\n### Fabric Readiness Repository\n\nThe [Fabric Readiness Repository](https://github.com/microsoft/Fabric-Readiness) contains presentation decks for various purposes, including user groups, online presentations, in-person conferences, and customer discussions. These resources come with comprehensive notes for presenters.\n\n### Fabric Notes\n\nFor a visually engaging learning exp",
+      "products_and_services": [
+        "Microsoft Fabric"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "prerequisites": [
+        "Azure Subscription",
+        "Git CLI",
+        "Azure Developer CLI (azd)",
+        "Microsoft Fabric capacity"
+      ],
+      "responsible_ai_tag": false,
+      "deployment_type": "Git/Source"
+    }
+  ]
+}

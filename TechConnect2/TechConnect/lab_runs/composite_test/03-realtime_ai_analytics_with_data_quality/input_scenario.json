@@ -1,0 +1,10 @@
+{
+  "title": "Real-Time AI Analytics with Data Quality",
+  "description": "Build real-time analytics pipeline with AI recommendations and quality monitoring",
+  "solution_area": "Azure (Data & AI)",
+  "secondary_areas": [
+    "AI"
+  ],
+  "is_composite": true,
+  "num_repos": 2
+}

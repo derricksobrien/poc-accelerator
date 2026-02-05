@@ -1,0 +1,24 @@
+# .dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.venv/
+venv/
+.env
+.env.local
+.git
+.gitignore
+.github
+*.md
+.vscode
+.idea
+*.log
+.chroma
+lab_runs
+test_output.txt
+*.xlsx
+*.docx
+*.rtf

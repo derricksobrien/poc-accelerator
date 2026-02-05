@@ -1,0 +1,10 @@
+{
+  "title": "Governed AI Platform with Unified Data",
+  "description": "Enterprise AI platform combining agents, data fabric, and compliance controls",
+  "solution_area": "AI",
+  "secondary_areas": [
+    "Azure (Data & AI)"
+  ],
+  "is_composite": true,
+  "num_repos": 2
+}

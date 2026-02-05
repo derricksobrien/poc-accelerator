@@ -1,0 +1,10 @@
+{
+  "title": "Secure Data Foundation with AI Insights",
+  "description": "Create enterprise data platform with AI-powered analytics and compliance guardrails",
+  "solution_area": "Azure (Data & AI)",
+  "secondary_areas": [
+    "AI"
+  ],
+  "is_composite": true,
+  "num_repos": 2
+}
