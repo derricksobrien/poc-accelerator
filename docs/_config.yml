@@ -13,10 +13,10 @@ timezone: UTC
 nav_links:
   - title: Home
     url: /poc-accelerator/
+  - title: Completion Report
+    url: /poc-accelerator/completion.html
   - title: Getting Started
     url: /poc-accelerator/getting-started.html
-  - title: Setup Guide
-    url: /poc-accelerator/setup-guide.html
   - title: Deployment
     url: /poc-accelerator/deployment.html
   - title: API Reference
