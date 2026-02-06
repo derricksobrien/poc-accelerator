@@ -1,3 +1,8 @@
+---
+layout: default
+title: Getting Started
+---
+
 # Getting Started
 
 Get up and running in 5 minutes.
@@ -21,9 +26,9 @@ Visit: **http://localhost:5000**
 
 ## Next Steps
 
-- [Deployment Guide](deployment.html) - Deploy to production
-- [API Reference](api-reference.html) - Use the REST API
-- [Back to Home](index.html) - Return to documentation
+- [Deployment Guide]({{ site.baseurl }}/deployment.html) - Deploy to production
+- [API Reference]({{ site.baseurl }}/api-reference.html) - Use the REST API
+- [Back to Home]({{ site.baseurl }}/index.html) - Return to documentation
 
 ---
 

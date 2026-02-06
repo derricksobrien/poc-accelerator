@@ -1,3 +1,8 @@
+---
+layout: default
+title: Completion Report
+---
+
 # Project Completion Report & Delivery Certification
 
 **Status:** ✅ **COMPLETE - ALL DELIVERABLES DELIVERED**  
