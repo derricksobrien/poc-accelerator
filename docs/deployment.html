@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment - POC Accelerator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            max-width: 1200px;
+            margin: 0 auto;
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            color: #555;
+            margin: 1.5rem 0 1rem 0;
+        }
+        
+        .option {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 2px;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+        
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1.5rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .checkmark {
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>☁️ Deployment Guide</h1>
+        <p>Deploy POC Accelerator to production</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">← Home</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="architecture.html">Architecture →</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Deployment Options</h2>
+            
+            <div class="option">
+                <h3>1. Local Development</h3>
+                <pre>python app.py</pre>
+                <p><strong>Best for:</strong> Development and testing</p>
+                <p><strong>Requirements:</strong> Python 3.8+, 4GB RAM</p>
+                <p><span class="checkmark">✅</span> No infrastructure required</p>
+            </div>
+            
+            <div class="option">
+                <h3>2. Docker Container</h3>
+                <pre>docker build -t poc-accelerator .
+docker run -p 5000:5000 poc-accelerator</pre>
+                <p><strong>Best for:</strong> Containerized environments</p>
+                <p><strong>Requirements:</strong> Docker installed</p>
+                <p><span class="checkmark">✅</span> Portable across all platforms</p>
+            </div>
+            
+            <div class="option">
+                <h3>3. Docker Compose</h3>
+                <pre>docker-compose up</pre>
+                <p><strong>Best for:</strong> Multi-service orchestration</p>
+                <p><strong>Requirements:</strong> Docker Compose</p>
+                <p><span class="checkmark">✅</span> Manages all services automatically</p>
+            </div>
+            
+            <div class="option">
+                <h3>4. Azure Container Apps</h3>
+                <p><strong>Best for:</strong> Serverless container orchestration</p>
+                <ul>
+                    <li>Automatic scaling based on demand</li>
+                    <li>Built-in monitoring</li>
+                    <li>Pay-per-execution pricing</li>
+                    <li>No infrastructure management</li>
+                </ul>
+                <p><span class="checkmark">✅</span> Fully configured and ready</p>
+            </div>
+            
+            <div class="option">
+                <h3>5. Azure App Service</h3>
+                <p><strong>Best for:</strong> Managed web hosting</p>
+                <ul>
+                    <li>Managed hosting environment</li>
+                    <li>Integrated monitoring and diagnostics</li>
+                    <li>Easy scaling options</li>
+                    <li>Built-in security features</li>
+                </ul>
+                <p><span class="checkmark">✅</span> Fully configured and ready</p>
+            </div>
+            
+            <h2>Environment Variables</h2>
+            <p>Configure the following environment variables for your deployment:</p>
+            <pre>OPENAI_API_KEY=your_azure_openai_key
+AZURE_FOUNDRY_KEY=your_ai_foundry_key
+AZURE_OPENAI_API_KEY=your_openai_api_key
+FLASK_ENV=production
+DEBUG=false</pre>
+            
+            <h2>Health Checks</h2>
+            <p>The API provides health check endpoints:</p>
+            <pre>GET /api/health</pre>
+            <p>Returns <code>200 OK</code> when healthy and ready to serve traffic.</p>
+            
+            <h2>Scaling</h2>
+            <p><span class="checkmark">✅</span> All deployment options support horizontal scaling</p>
+            <ul>
+                <li>Docker: Deploy multiple containers behind a load balancer</li>
+                <li>Azure Container Apps: Automatic scaling to 10+ instances</li>
+                <li>App Service: Built-in scale options up to 100+ instances</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>POC Accelerator | <a href="https://github.com/derricksobrien/poc-accelerator" style="color: #667eea;">View on GitHub</a></p>
+    </footer>
+</body>
+</html>

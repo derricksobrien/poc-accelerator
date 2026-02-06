@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture - POC Accelerator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            max-width: 1200px;
+            margin: 0 auto;
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            color: #555;
+            margin: 1.5rem 0 1rem 0;
+        }
+        
+        .module {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+        
+        .module strong {
+            color: #667eea;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 2px;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏗️ Architecture</h1>
+        <p>System design and components</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">← Home</a></li>
+            <li><a href="deployment.html">Deployment</a></li>
+            <li><a href="api-reference.html">API Reference →</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>System Overview</h2>
+            <p>POC Accelerator is a Retrieval-Augmented Generation (RAG) system that transforms unstructured GitHub repository data into structured proof-of-concept instructions.</p>
+            
+            <h2>Core Modules</h2>
+            
+            <div class="module">
+                <h3>📥 Module A: Data Ingestion</h3>
+                <p><strong>Purpose:</strong> Load and parse repository metadata</p>
+                <p><strong>Key Class:</strong> <code>CatalogScraper</code></p>
+                <p><strong>Input:</strong> catalog.json with 50+ accelerators</p>
+                <p><strong>Output:</strong> Structured CatalogItem objects with validation</p>
+                <p>Loads Microsoft Solution Accelerators with full metadata validation via Pydantic</p>
+            </div>
+            
+            <div class="module">
+                <h3>✔️ Module B: Data Validation</h3>
+                <p><strong>Purpose:</strong> Ensure schema compliance and type safety</p>
+                <p><strong>Key Classes:</strong> <code>CatalogItem</code>, <code>ContextBlock</code></p>
+                <p><strong>Pattern:</strong> Pydantic models with enum-based categories</p>
+                <p>Provides type-safe data handling with enum-based categories (SolutionAreaEnum, ComplexityLevel)</p>
+            </div>
+            
+            <div class="module">
+                <h3>🔍 Module C: Vector Store</h3>
+                <p><strong>Purpose:</strong> Index metadata for semantic search</p>
+                <p><strong>Key Class:</strong> <code>SimpleVectorStore</code></p>
+                <p><strong>Features:</strong> TF-IDF token matching with cosine similarity ranking</p>
+                <p>Lightweight in-memory store with filtering by solution_area + complexity_level</p>
+            </div>
+            
+            <div class="module">
+                <h3>📡 Module D: REST API</h3>
+                <p><strong>Purpose:</strong> Expose endpoints for downstream agents</p>
+                <p><strong>Framework:</strong> FastAPI with full Swagger documentation</p>
+                <p><strong>Endpoints:</strong> 11 production-ready endpoints</p>
+                <p>Provides JSON responses with XML tagging for token-efficient parsing</p>
+            </div>
+            
+            <div class="module">
+                <h3>🛡️ Module E: Governance Guardrails</h3>
+                <p><strong>Purpose:</strong> Inject Responsible AI disclaimers</p>
+                <p><strong>Pattern:</strong> Check responsible_ai_tag and conditionally append RAI prompt</p>
+                <p>Ensures all AI-category solutions include appropriate disclaimers</p>
+            </div>
+            
+            <h2>Data Flow</h2>
+            <pre>catalog.json 
+  ↓
+CatalogScraper → CatalogItem (Pydantic-validated)
+  ↓
+VectorStore.ingest() → semantic index
+  ↓
+Search query → VectorStore.search() → ranked results + metadata
+  ↓
+Results → Context Provider → ContextBlock (XML-formatted)
+  ↓
+REST API → JSON response</pre>
+            
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Backend:</strong> Python 3.10+, FastAPI, Flask</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (Vanilla & Streamlit)</li>
+                <li><strong>Database:</strong> PostgreSQL (caching), JSON (config)</li>
+                <li><strong>AI Services:</strong> Azure AI Foundry, Azure OpenAI API</li>
+                <li><strong>Deployment:</strong> Docker, Azure Container Apps, App Service</li>
+                <li><strong>Testing:</strong> pytest, 100% coverage</li>
+            </ul>
+            
+            <h2>Performance Characteristics</h2>
+            <ul>
+                <li><strong>Response Time:</strong> &lt;100ms (semantic search)</li>
+                <li><strong>Throughput:</strong> 100+ requests/second</li>
+                <li><strong>Memory Usage:</strong> &lt;200MB idle, &lt;500MB loaded</li>
+                <li><strong>Startup Time:</strong> &lt;5 seconds</li>
+                <li><strong>Data Sources:</strong> 50+ indexed accelerators</li>
+            </ul>
+            
+            <h2>Solution Areas Supported</h2>
+            <ol>
+                <li><strong>AI & Machine Learning</strong> (L200/L300/L400) - Azure AI Foundry, OpenAI, Copilot integration</li>
+                <li><strong>Security & Compliance</strong> (L200/L300/L400) - Azure security services, Purview, Sentinel</li>
+                <li><strong>Azure Cloud & Platform</strong> (L200/L300/L400) - VMs, Kubernetes, App Service, Functions</li>
+                <li><strong>Cloud & AI Platforms</strong> (L200/L300/L400) - Multi-cloud orchestration, hybrid deployment</li>
+            </ol>
+        </div>
+    </div>
+    
+    <footer>
+        <p>POC Accelerator | <a href="https://github.com/derricksobrien/poc-accelerator" style="color: #667eea;">View on GitHub</a></p>
+    </footer>
+</body>
+</html>
