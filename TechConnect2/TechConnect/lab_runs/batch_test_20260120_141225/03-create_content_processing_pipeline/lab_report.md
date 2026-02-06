@@ -1,0 +1,115 @@
+
+╔════════════════════════════════════════════════════════════════╗
+║  SKILLABLE LAB INSTRUCTIONS REPORT                             ║
+╚════════════════════════════════════════════════════════════════╝
+
+LAB METADATA
+────────────────────────────────────────────────────────────────
+Title:              Lab: Deploy Content Processing Accelerator
+Solution ID:        content-processing
+Complexity Level:   L300
+Solution Area:      AI
+Duration:           1-2 hours
+Repository:         https://github.com/microsoft/content-processing-solution-accelerator
+Status:             Not Started
+
+OBJECTIVE
+────────────────────────────────────────────────────────────────
+Deploy and configure Content Processing Accelerator in your Azure environment.
+
+DESCRIPTION
+────────────────────────────────────────────────────────────────
+# Content processing solution accelerator
+Extract data and apply schemas across your multi-modal content, with confidence scoring and user validation enabling greater speed of data ingestion. Process claims, invoices, contracts and other documents quickly and accurately by extracting information from unstructured content and mapping it to a structured format. This template supports text, images, tables and graphs.
+
+These capabilities can be applied to numerous use cases including: contract processing, claims processing, invoice processing, ID verification, and clinician-patient visit record summarization. 
+
+<br/>
+
+<div align="center">
+  
+[**SOLUTION OVERVIEW**](#solution-overview)  \| [**QUICK DEPLOY**](#quick-deploy)  \| [**BUSINESS SCENARIO**](#business-scenario)  \| [**SUPPORTING DOCUMENTATION**](#supporting-documentation)
+
+</div>
+<br/>
+
+ **Note:** With any AI solutions you create using these templates, you are responsible for assessing all associated risks and for complying with all applicable laws and safety standards. Learn more in the transparency documents for [Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/agents/transparency-note) and [Agent Framework](https://github.com/microsoft/agent-framework/blob/main/TRANSPARENCY_FAQ.md).
+<br/>
+
+<h2><img src="./docs/images/readme/solution-overview.png" width="48" />
+Solution overview
+</h2>
+
+This accelerator leverages Azure AI Foundry, Azure AI Content Understanding Service, Azure OpenAI Service, Azure Blob Storage, Azure Cosmos DB, and Azure Container Apps to transform large volumes of unstructured content through event-driven processing pipelines for integration into downstream applications and post-processing activities. Processing, extraction and data schema transformation steps are scored for accuracy to automate processing and identify as-needed human validation.
+
+### Solution architecture
+|![image](./docs/images/readme/solution-architecture.png)|
+|---|
+
+
+### How to customize
+If
+
+LEARNING OUTCOMES
+────────────────────────────────────────────────────────────────
+1. Understand the architecture of Content Processing Accelerator
+2. Configure required Azure services and prerequisites
+3. Deploy the solution using provided templates
+4. Validate the deployment and verify functionality
+5. Implement responsible AI governance practices
+
+PREREQUISITES (3)
+────────────────────────────────────────────────────────────────
+1. Azure AI Content Understanding Service access
+2. Azure Storage Account
+3. Azure Developer CLI (azd) v1.18.0+
+
+TECHNOLOGIES & SERVICES (4)
+────────────────────────────────────────────────────────────────
+1. Azure AI Foundry Models
+2. Azure AI Content Understanding
+3. Azure Cosmos DB
+4. Azure Container Apps
+
+⚠️  RESPONSIBLE AI GOVERNANCE REQUIRED
+────────────────────────────────────────────────────────────────
+This solution includes Generative AI/LLM components. 
+The following governance practices are required:
+- Enable monitoring for model outputs
+- Implement human review workflows  
+- Document AI capabilities and limitations
+- Ensure Microsoft RAI compliance
+- Setup audit logging and tracking
+
+IMPLEMENTATION REQUIREMENTS:
+✓ Enable monitoring for model outputs
+✓ Implement human review workflows
+✓ Document AI capabilities and limitations
+✓ Ensure Microsoft RAI compliance
+✓ Setup audit logging and tracking
+
+
+SUCCESS CRITERIA
+────────────────────────────────────────────────────────────────
+To successfully complete this lab, you must:
+1. All prerequisites verified
+2. Azure resources successfully deployed
+3. Application endpoints responding
+4. Functionality tests passing
+5. No critical errors in logs
+6. RAI governance policies documented and implemented
+
+TIME ESTIMATE
+────────────────────────────────────────────────────────────────
+Estimated total time: 1-2 hours
+
+SUPPORT & RESOURCES
+────────────────────────────────────────────────────────────────
+Repository:  https://github.com/microsoft/content-processing-solution-accelerator
+Documentation: See repo /docs folder
+Support: Skillable Labs team
+
+════════════════════════════════════════════════════════════════
+Generated by: Skillable Gen AI Lab Instructions Generator
+Powered by: TechConnect Contextual Broker
+════════════════════════════════════════════════════════════════

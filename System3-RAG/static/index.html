@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System3-RAG - AI Foundry Agent POC Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 System3-RAG - AI Foundry POC Generator</h1>
+            <p class="subtitle">Intelligent POC Generation with Azure AI Foundry Agents</p>
+            <p class="version">Next Generation • Agent-Based Architecture • Grounded Responses</p>
+        </header>
+
+        <div class="session-bar">
+            <div class="session-info">
+                <span id="sessionId">No Session</span>
+                <button class="btn btn-small" onclick="createNewSession()">New Session</button>
+                <button class="btn btn-small" onclick="exportSessionData()">Export</button>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="generate">Generate POC</button>
+            <button class="tab-button" data-tab="chat">Agent Chat</button>
+            <button class="tab-button" data-tab="search">Search Solutions</button>
+            <button class="tab-button" data-tab="history">POC History</button>
+            <button class="tab-button" data-tab="status">System Status</button>
+        </div>
+
+        <!-- Tab 1: Generate POC -->
+        <div id="generate" class="tab-content active">
+            <h2>Generate Proof-of-Concept (Agent-Powered)</h2>
+            <p class="tab-description">Use Azure AI Foundry agents to generate intelligent, enterprise-grade POCs with RBAC, deployment scripts, and IaC templates.</p>
+            
+            <form id="pocForm">
+                <div class="form-group">
+                    <label for="solutionArea">Solution Area:</label>
+                    <select id="solutionArea" required>
+                        <option value="">-- Select Solution Area --</option>
+                        <option value="AI">AI</option>
+                        <option value="Azure (Data & AI)">Azure (Data & AI)</option>
+                        <option value="Cloud & AI Platforms">Cloud & AI Platforms</option>
+                        <option value="Security">Security</option>
+                        <option value="Fabric">Fabric</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pocTitle">POC Title:</label>
+                    <input type="text" id="pocTitle" placeholder="e.g., Enterprise AI Automation Platform" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pocQuery">Detailed Requirements:</label>
+                    <textarea id="pocQuery" rows="5" placeholder="Describe your POC requirements, constraints, team size, timeline..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="topResults">Top Solutions to Consider:</label>
+                    <input type="number" id="topResults" min="1" max="10" value="5">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Generate POC with Agent</button>
+            </form>
+
+            <div id="pocResult" class="result-box" style="display:none;">
+                <h3>Generated POC</h3>
+                <div id="pocOutput" class="poc-output"></div>
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="downloadPOC()">Download</button>
+                    <button class="btn btn-secondary" onclick="copyToClipboard('pocOutput')">Copy</button>
+                </div>
+            </div>
+
+            <div id="pocError" class="error-box" style="display:none;">
+                <strong>Error:</strong>
+                <p id="pocErrorMsg"></p>
+            </div>
+        </div>
+
+        <!-- Tab 2: Agent Chat -->
+        <div id="chat" class="tab-content">
+            <h2>Agent Chat</h2>
+            <p class="tab-description">Have a multi-turn conversation with the AI Foundry agent. Ask about solutions, architecture decisions, deployment scripts, and more.</p>
+            
+            <div id="chatMessages" class="chat-messages"></div>
+            
+            <form id="chatForm">
+                <div class="form-group">
+                    <input type="text" id="chatInput" placeholder="Ask me anything about solution accelerators, architecture, or deployment..." required>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+
+            <div id="chatError" class="error-box" style="display:none;">
+                <strong>Error:</strong>
+                <p id="chatErrorMsg"></p>
+            </div>
+        </div>
+
+        <!-- Tab 3: Search Solutions -->
+        <div id="search" class="tab-content">
+            <h2>Search Solutions Catalog</h2>
+            <p class="tab-description">Search the 15-solution Microsoft accelerators catalog with semantic matching.</p>
+            
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="searchQuery">Search Query:</label>
+                    <input type="text" id="searchQuery" placeholder="e.g., cloud transformation, AI automation, data analytics" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topK">Number of Results:</label>
+                    <input type="number" id="topK" min="1" max="10" value="5">
+                </div>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="includeSynthesis" checked>
+                    Include Agent Synthesis
+                </label>
+
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+
+            <div id="searchResult" class="result-box" style="display:none;">
+                <h3>Search Results</h3>
+                <div id="searchOutput"></div>
+                <div id="searchSynthesis" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;"></div>
+            </div>
+
+            <div id="searchError" class="error-box" style="display:none;">
+                <strong>Error:</strong>
+                <p id="searchErrorMsg"></p>
+            </div>
+        </div>
+
+        <!-- Tab 4: POC History -->
+        <div id="history" class="tab-content">
+            <h2>Generated POC History</h2>
+            <p class="tab-description">View all POCs generated in this session.</p>
+            
+            <button class="btn btn-secondary" onclick="loadHistory()">Refresh History</button>
+            
+            <div id="historyResult" class="result-box" style="display:none;">
+                <div id="historyOutput"></div>
+            </div>
+            
+            <div id="historyEmpty" class="info-box">
+                <p>No POCs generated yet. Start in the "Generate POC" tab.</p>
+            </div>
+        </div>
+
+        <!-- Tab 5: System Status -->
+        <div id="status" class="tab-content">
+            <h2>System Status</h2>
+            <p class="tab-description">Check System3-RAG and Azure AI Foundry configurations.</p>
+            
+            <button class="btn btn-secondary" onclick="checkSystemStatus()">Check Status</button>
+            
+            <div id="statusResult" class="result-box" style="display:none;">
+                <pre id="statusOutput"></pre>
+            </div>
+
+            <div class="status-info">
+                <h3>System Information</h3>
+                <table>
+                    <tr>
+                        <td><strong>Service:</strong></td>
+                        <td>System3-RAG</td>
+                    </tr>
+                    <tr>
+                        <td><strong>API Endpoint:</strong></td>
+                        <td id="apiEndpoint">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Environment:</strong></td>
+                        <td id="environment">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Agent Status:</strong></td>
+                        <td id="agentStatus">Checking...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Health:</strong></td>
+                        <td id="healthStatus">Loading...</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 System3-RAG | Azure AI Foundry Agent-Based POC Generator | Powered by FastAPI & Azure</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

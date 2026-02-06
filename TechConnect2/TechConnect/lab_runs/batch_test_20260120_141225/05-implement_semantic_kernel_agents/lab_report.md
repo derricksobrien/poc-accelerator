@@ -1,0 +1,114 @@
+
+╔════════════════════════════════════════════════════════════════╗
+║  SKILLABLE LAB INSTRUCTIONS REPORT                             ║
+╚════════════════════════════════════════════════════════════════╝
+
+LAB METADATA
+────────────────────────────────────────────────────────────────
+Title:              Lab: Deploy Intelligent Apps with Semantic Kernel
+Solution ID:        intelligent-app
+Complexity Level:   L300
+Solution Area:      AI
+Duration:           1-2 hours
+Repository:         https://github.com/microsoft/semantic-kernel.git
+Status:             Not Started
+
+OBJECTIVE
+────────────────────────────────────────────────────────────────
+Deploy and configure Intelligent Apps with Semantic Kernel in your Azure environment.
+
+DESCRIPTION
+────────────────────────────────────────────────────────────────
+# Semantic Kernel
+
+**Build intelligent AI agents and multi-agent systems with this enterprise-ready orchestration framework**
+
+[![License: MIT](https://img.shields.io/github/license/microsoft/semantic-kernel)](https://github.com/microsoft/semantic-kernel/blob/main/LICENSE)
+[![Python package](https://img.shields.io/pypi/v/semantic-kernel)](https://pypi.org/project/semantic-kernel/)
+[![Nuget package](https://img.shields.io/nuget/vpre/Microsoft.SemanticKernel)](https://www.nuget.org/packages/Microsoft.SemanticKernel/)
+[![Discord](https://img.shields.io/discord/1063152441819942922?label=Discord&logo=discord&logoColor=white&color=d82679)](https://aka.ms/SKDiscord)
+
+
+## What is Semantic Kernel?
+
+Semantic Kernel is a model-agnostic SDK that empowers developers to build, orchestrate, and deploy AI agents and multi-agent systems. Whether you're building a simple chatbot or a complex multi-agent workflow, Semantic Kernel provides the tools you need with enterprise-grade reliability and flexibility.
+
+## System Requirements
+
+- **Python**: 3.10+
+- **.NET**: .NET 10.0+ 
+- **Java**: JDK 17+
+- **OS Support**: Windows, macOS, Linux
+
+## Key Features
+
+- **Model Flexibility**: Connect to any LLM with built-in support for [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [Hugging Face](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/) and more
+- **Agent Framework**: Build modular AI agents with access to tools/plugins, memory, and planning capabilities
+- **Multi-Agent Systems**: Orchestrate complex workflows with collaborating specialist agents
+- **Plugin Ecosystem**: Extend with native code functions, prompt templates, OpenAPI specs, or Model Context Protocol (MCP)
+- **Vector DB Support**: Seamless integration with [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search), [Elasticsearch](https://www
+
+LEARNING OUTCOMES
+────────────────────────────────────────────────────────────────
+1. Understand the architecture of Intelligent Apps with Semantic Kernel
+2. Configure required Azure services and prerequisites
+3. Deploy the solution using provided templates
+4. Validate the deployment and verify functionality
+5. Implement responsible AI governance practices
+
+PREREQUISITES (5)
+────────────────────────────────────────────────────────────────
+1. Azure Subscription
+2. Git CLI
+3. Azure Developer CLI (azd)
+4. Azure OpenAI Service access
+5. Azure AI Foundry subscription
+
+TECHNOLOGIES & SERVICES (3)
+────────────────────────────────────────────────────────────────
+1. Azure AI Foundry
+2. Agent Framework
+3. Azure OpenAI Service
+
+⚠️  RESPONSIBLE AI GOVERNANCE REQUIRED
+────────────────────────────────────────────────────────────────
+This solution includes Generative AI/LLM components. 
+The following governance practices are required:
+- Enable monitoring for model outputs
+- Implement human review workflows  
+- Document AI capabilities and limitations
+- Ensure Microsoft RAI compliance
+- Setup audit logging and tracking
+
+IMPLEMENTATION REQUIREMENTS:
+✓ Enable monitoring for model outputs
+✓ Implement human review workflows
+✓ Document AI capabilities and limitations
+✓ Ensure Microsoft RAI compliance
+✓ Setup audit logging and tracking
+
+
+SUCCESS CRITERIA
+────────────────────────────────────────────────────────────────
+To successfully complete this lab, you must:
+1. All prerequisites verified
+2. Azure resources successfully deployed
+3. Application endpoints responding
+4. Functionality tests passing
+5. No critical errors in logs
+6. RAI governance policies documented and implemented
+
+TIME ESTIMATE
+────────────────────────────────────────────────────────────────
+Estimated total time: 1-2 hours
+
+SUPPORT & RESOURCES
+────────────────────────────────────────────────────────────────
+Repository:  https://github.com/microsoft/semantic-kernel.git
+Documentation: See repo /docs folder
+Support: Skillable Labs team
+
+════════════════════════════════════════════════════════════════
+Generated by: Skillable Gen AI Lab Instructions Generator
+Powered by: TechConnect Contextual Broker
+════════════════════════════════════════════════════════════════

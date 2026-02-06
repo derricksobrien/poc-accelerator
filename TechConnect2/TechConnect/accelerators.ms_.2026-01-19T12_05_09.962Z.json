@@ -1,0 +1,107 @@
+{
+  "data": {
+    "markdown": "Microsoft \\| Solution Accelerators\n\n# Unlock your ability to  build AI solutions faster\n\nLaunch AI products faster with enterprise-grade, customizable solutions built on trusted architectures—kept up to date, easy to configure, and supported with guided setup and sample data.\n\nView accelerators\n\n![Video thumbnail](https://img.youtube.com/vi/MaWIr95YAVc/maxresdefault.jpg)\n\nMicrosoft Accelerates AI - YouTube\n\n[Photo image of Microsoft Solution Accelerators](https://www.youtube.com/channel/UCWPwlPN6vnTkkoKJaY_a-pA?embeds_referring_euri=https%3A%2F%2Faccelerators.ms%2F)\n\nMicrosoft Solution Accelerators\n\n10 subscribers\n\n[Microsoft Accelerates AI](https://www.youtube.com/watch?v=MaWIr95YAVc)\n\nMicrosoft Solution Accelerators\n\nSearch\n\nInfo\n\nShopping\n\nTap to unmute\n\nIf playback doesn't begin shortly, try restarting your device.\n\nYou're signed out\n\nVideos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.\n\nCancelConfirm\n\nShare\n\nInclude playlist\n\nAn error occurred while retrieving sharing information. Please try again later.\n\nWatch later\n\nShare\n\nCopy link\n\nWatch on\n\n0:00\n\n/\n\n•Live\n\n•\n\nFeatured acceleratorsFeatured acceleratorsAll acceleratorsAll acceleratorsDifferentiatorsDifferentiatorsHow it worksHow it worksSuccess storiesSuccess stories\n\n![Email](https://accelerators.ms/icons/Illustration.png)Share your feedbackFeedback\n\nFeatured AI accelerators\n\n### Multi-Agent Custom Automation Engine\n\nDelegate complex, repetitive tasks to AI agents that act on your behalf—executing work efficiently, reducing manual effort, and ensuring results align with your organization's standards.\n\nProducts and services\n\nAzure AI Foundry ModelsAzure AI Foundry Agent ServiceAgent FrameworkAzure Container AppsAzure Cosmos DBFoundry IQ\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/MultiAgent)\n\n![Multi-Agent Custom Automation Engine screenshot](https://accelerators.ms/featured/multiagent.png)\n\n### Content Processing\n\nSpeed up document-heavy tasks using AI that understands text, tables, and charts—turning them into clear, usable data. Process claims, invoices, and contracts with precision and confidence.\n\nProducts and services\n\nAzure AI Foundry ModelsAzure AI Content UnderstandingAzure Cosmos DBAzure Container Apps\n\nLanguages\n\nBicep, TypeScript, Python\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/ContentProcessing)\n\n![Content Processing screenshot](https://accelerators.ms/featured/contentprocessing.png)\n\n### Conversation Knowledge Mining\n\nImprove contact center performance with AI-powered conversation intelligence—analyzing audio and text data on a large scale to show insights, improve service, and drive smarter decisions.\n\nProducts and services\n\nAzure AI Content UnderstandingAzure OpenAI ServiceAzure AI SearchAzure AI Agent ServiceAzure Container AppsAzure SQL Database\n\nLanguages\n\nPython, TypeScript, Bicep\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/ConversationKnowledgeMining)\n\n![Conversation Knowledge Mining screenshot](https://accelerators.ms/featured/conversationknowledgemining.png)\n\nProducts and Services\n\nAgent Framework\n\nAzure AI Agent Service\n\nAzure AI Content Understanding\n\nAzure AI Document Intelligence\n\nAzure AI Foundry Agent Service\n\nAzure AI Foundry Models\n\nAzure AI Search\n\nAzure AI Services\n\nAzure App Service\n\nAzure Configuration Service\n\nAzure Container Apps\n\nAzure Cosmos DB\n\nAzure Databricks\n\nAzure Event Hubs\n\nAzure Functions\n\nAzure OpenAI Service\n\nAzure PostgreSQL\n\nAzure SQL Database\n\nAzure Speech Service\n\nData Security Posture Management For AI\n\nDefender for AI\n\nEventhouse in Microsoft Fabric\n\nEventstream in Microsoft Fabric\n\nFabric Activator\n\nFabric Data Agent\n\nFoundry IQ\n\nMCP Container\n\nMicrosoft Agent Framework\n\nMicrosoft Agent Service\n\nMicrosoft Fabric\n\nMicrosoft Foundry\n\nOneLake\n\nPurview\n\nReal-Time Intelligence\n\nSQL DB in Fabric\n\nSemantic Kernel\n\nIndustries\n\nAutomotive\n\nDefense and Intelligence\n\nEducation\n\nEnergy\n\nFinancial Services\n\nGovernment\n\nHealthcare\n\nIndustrials and Manufacturing\n\nMedia and Entertainment\n\nNon-profit\n\nProfessional Services\n\nRetail\n\nTelecommunications\n\nLanguages\n\nBicep\n\nC#\n\nKQL\n\nPowerShell\n\nPython\n\nReact\n\nSQL\n\nShell\n\nTypeScript\n\nExplore all accelerators\n\nSort by\n\nSecurity\n\nActively maintained\n\nData & Agent Governance and SecurityConfidently adopt AI by automating Microsoft Purview and compliance guardrails - capturing prompts and responses, enforcing data protection policies, and streamlining governance across Copilot, Foundry, Fabric, and custom AI agents.\n\nProducts and Services\n\nPurviewOneLakeMicrosoft FabricData Security Posture Management For AIDefender for AI\n\nLanguagesPowerShell, Bicep\n\n[Open in GitHub](https://aka.ms/DAGSA)\n\nCloud & AI Platforms\n\nActively maintained\n\nReal-Time Intelligence for OperationsHarness Real-Time Intelligence on the unified data foundation with Microsoft Fabric to minimize downtime, maximize asset productivity, and optimize operations.\n\nProducts and Services\n\nMicrosoft FabricOneLakeReal-Time IntelligenceFabric Data AgentEventstream in Microsoft FabricEventhouse in Microsoft Fabric\n\nLanguagesPython, KQL, PowerShell, Bicep\n\n[Open in GitHub](https://aka.ms/RTIOps)\n\nCloud & AI Platforms\n\nActively maintained\n\nCustomer ChatbotCreate a customer chatbot that enables natural interactions for external customers, provides real-time assistance, and improves overall customer satisfaction leveraging AI.\n\nProducts and Services\n\nMicrosoft FoundryAzure OpenAI ServiceFoundry IQMicrosoft Agent ServiceAzure Cosmos DBAzure App Service\n\nLanguagesPython, React, TypeScript\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/CustomerChatbot)\n\nCloud & AI Platforms\n\nActively maintained\n\nAgentic Applications for Unified Data FoundationAccelerate decision making at scale with secure, agentic AI built on a unified data foundation with two use cases for sales performance and customer insights.\n\nProducts and Services\n\nMicrosoft FabricSQL DB in FabricMicrosoft FoundryMicrosoft Agent FrameworkAzure App Service\n\nLanguagesPython, SQL, TypeScript\n\n[Open in GitHub](https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator)\n\nCloud & AI Platforms\n\nActively maintained\n\nUnified Data Foundation with FabricEstablish a unified data foundation in Fabric to enable decision making and achieve scalable insights by leveraging the Modern Analytics, AI and Governance framework (MAAG) for your enterprise data assets\n\nProducts and Services\n\nMicrosoft FabricOneLakeAzure DatabricksPurview\n\nLanguagesPython, SQL\n\n[Open in GitHub](https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator)\n\nCloud & AI Platforms\n\nActively maintained\n\nContainer-MigrationLeverage AI to streamline container platform migration by automating tasks empowering organizations to focus on high-value tasks.\n\nProducts and Services\n\nAzure AI ServicesAzure Cosmos DBAzure Container AppsAzure Configuration Service\n\nLanguagesPython, TypeScript\n\n[Open in GitHub](https://github.com/microsoft/Container-Migration-Solution-Accelerator)\n\nCloud & AI Platforms\n\nActively maintained\n\nContent ProcessingProcess claims, invoices, contracts and other documents quickly and accurately by extracting information from unstructured content and mapping it to a structured format. This template supports text, images, tables and graphs.\n\nProducts and Services\n\nAzure AI Foundry ModelsAzure AI Content UnderstandingAzure Cosmos DBAzure Container Apps\n\nLanguagesBicep, TypeScript, Python\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/ContentProcessing)\n\nCloud & AI Platforms\n\nActively maintained\n\nMulti-Agent Custom Automation EngineEnhance task planning and automation by orchestrating and managing a group of AI agents with multiple use cases: Employee On-Boarding and Self-service, Product Marketing, Customer Retail Remediation, RFP Reviewer, Contract Compliance Reviewer\n\nProducts and Services\n\nAzure AI Foundry ModelsAzure AI Foundry Agent ServiceAgent FrameworkAzure Container AppsAzure Cosmos DBFoundry IQ\n\nLanguagesNo languages specified\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/MultiAgent)\n\nCloud & AI Platforms\n\nActively maintained\n\nModernize your CodeMigrate legacy code to modern languages by leveraging a team of AI agents.\n\nProducts and Services\n\nAzure AI Foundry ModelsAzure AI Foundry Agent ServiceSemantic KernelAzure Container AppsAzure Cosmos DB\n\nLanguagesBicep, TypeScript, Python\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/ModernizeCode)\n\nCloud & AI Platforms\n\nActively maintained\n\nBuild your own copilot – Client AdvisorSave time and prepare relevant discussion topics for scheduled client meetings with an overview of daily schedules and easy navigation between client profiles and a chat interface.\n\nProducts and Services\n\nAzure AI SearchAzure AI Foundry ModelsAzure Cosmos DBAzure SQL DatabaseAzure Container Apps\n\nLanguagesBicep, TypeScript, Python\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/BuildYourOwncopilot)\n\nCloud & AI Platforms\n\nActively maintained\n\nBuild your own copilot – Doc GenGenerate documents such as contracts, invoices, and investment proposals by finding and summarizing relevant information from from your own unstructured data.\n\nProducts and Services\n\nAzure AI Foundry ModelsAzure AI SearchAzure Cosmos DBAzure Container AppsAzure AI Services\n\nLanguagesBicep, TypeScript, Python\n\n[Open in GitHub](https://aka.ms/CSAGoldStandard/BuildYourOwnCopilotDocGen)\n\nCloud & AI Platforms\n\nActively maintained\n\nDocument Knowledge MiningIngest, extract, and classify content from a high volume of assets to gain deeper insights and generate relevant suggestions for quick and easy review.\n\nProducts and Services\n\nAzure AI Foundry ModelsAzure AI SearchAzure AI Document Intelligence\n\nLanguagesBicep, TypeScript, C#, PowerShell\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/DocumentKnowledgeMining)\n\nCloud & AI Platforms\n\nActively maintained\n\nConversation Knowledge MiningImprove contact center efficiency by uncovering insights from large audio and text-based data sets using advanced content understanding capabilities with two use cases for telco and IT helpdesk.\n\nProducts and Services\n\nAzure AI Content UnderstandingAzure OpenAI ServiceAzure AI SearchAzure AI Agent ServiceAzure Container AppsAzure SQL Database\n\nLanguagesPython, TypeScript, Bicep\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/ConversationKnowledgeMining)\n\nCloud & AI Platforms\n\nActively maintained\n\nDeploy Your AI Application in ProductionCreate a secure, extensible and integrated environment for deploying and running AI Foundry workloads in production.\n\nProducts and Services\n\nAzure AI Foundry ModelsAzure AI SearchAzure Cosmos DBAzure Container Apps\n\nLanguagesBicep, Shell, PowerShell, Python\n\n[Open in GitHub](https://github.com/microsoft/deploy-your-ai-application-in-production)\n\nCloud & AI Platforms\n\nActively maintained\n\nChat with your dataCreate a conversational AI chat experience to extract key information, summarize content, and provide relevant insights from your unstructured data.\n\nProducts and Services\n\nAzure AI Foundry ModelsAzure AI SearchAzure Cosmos DBAzure PostgreSQLAzure Container AppsAzure Functions\n\nLanguagesBicep, TypeScript, Python\n\n[Open in GitHub](https://aka.ms/CSAGoldStandards/ChatWithYourData)\n\nDeliver value faster with accelerators\n\nAccelerators provide the guidance and tools you need to launch with confidence and deliver results fast.\n\nProven architecture\n\nLeverage a trusted, scalable solution design based on best practices—built to ensure reliability, security, and performance, so your teams can deploy with confidence.\n\nQuick deployment\n\nAccelerated value\n\nComprehensive documentation\n\nCosting estimate\n\n![Proven architecture diagram](https://accelerators.ms/differentiators/solutionArch.png)\n\nHow it works\n\n![Step 1: Browse](https://accelerators.ms/icons/Search%20Progress.png)\n\nStep 1: BrowseBrowse available accelerators to discover ready-made solutions tailored to your customer needs.\n\n![Step 2: Select](https://accelerators.ms/icons/Editor.png)\n\nStep 2: SelectSelect the accelerator that best fits your business use case and adapt it to your needs using built-in configuration options.\n\n![Step 3: Review](https://accelerators.ms/icons/Grid%20List.png)\n\nStep 3: ReviewReview pre-requisites and costing to ensure alignment with your organizational needs.\n\n![Step 4: Deploy](https://accelerators.ms/icons/AI%20Flash%20Sparkle.png)\n\nStep 4: DeployUse deployment guide to launch your solution quickly and securely.\n\nTrusted by customers\n\nLaunch AI products faster with enterprise-grade, customizable solutions built on trusted architectures—kept up to date, easy to configure, and supported with guided setup and sample data.\n\nView Customer Stories\n\nAlways current. Fully maintained.\n\n![Contact us](https://accelerators.ms/icons/Illustration.png)\n\nWe're here to help. Whether you're looking for answers, want to share feedback, or just have a question — [Get in touch](mailto:CSAGoldStandards@service.microsoft.com) and we'll connect with you soon.\n\n[Sitemap](https://www.microsoft.com/en-us/sitemap) [Contact Microsoft](https://support.microsoft.com/contactus) [Privacy](https://www.microsoft.com/en-us/privacy/privacystatement) [Terms of use](https://www.microsoft.com/en-us/legal/terms-of-use) [Trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks) [Safety & eco](https://www.microsoft.com/en-us/legal/compliance/devices-safety-and-eco) [Recycling](https://www.microsoft.com/en-us/legal/compliance/recycling) [About our ads](https://account.microsoft.com/privacy/ad-settings/signedout?refd=www.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2Fad-settings%3Frefd%3Dwww.microsoft.com)\n\n© Microsoft 2026",
+    "metadata": {
+      "robots": "noindex",
+      "language": "en",
+      "title": "Microsoft - AI Solution Accelerators",
+      "viewport": [
+        "width=device-width, initial-scale=1.0",
+        "width=device-width, initial-scale=1"
+      ],
+      "description": "Accelerate your AI solutions with Microsoft.",
+      "keywords": "Microsoft, AI, ML, Solution Accelerators, Technology, Innovation, Azure, Cloud Computing, Artificial Intelligence, Machine Learning, OpenAI, LLM, Large Language Models, AI Transformation, Workflow Automation, Agents",
+      "favicon": "https://accelerators.ms/favicon.ico",
+      "scrapeId": "019bd625-0b05-7571-840c-3fde628e1847",
+      "sourceURL": "https://accelerators.ms/",
+      "url": "https://accelerators.ms/",
+      "statusCode": 200,
+      "contentType": "text/html; charset=utf-8",
+      "timezone": "America/New_York",
+      "proxyUsed": "basic",
+      "cacheState": "miss",
+      "indexId": "e45ccf62-30d0-4df7-af21-da8f4e894f63",
+      "creditsUsed": 1,
+      "concurrencyLimited": false
+    }
+  },
+  "scrape_id": "019bd625-0b05-7571-840c-3fde628e1847",
+  "id": "kw8U-OzzlSrr0quZYs-TC",
+  "startedAt": "2026-01-19T12:05:09.962Z",
+  "endedAt": "2026-01-19T12:05:14.757Z",
+  "endpoint": "scrape",
+  "formState": {
+    "extractSetupCompleted": false,
+    "urls": [],
+    "extractSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_mission": {
+          "type": "string"
+        },
+        "supports_sso": {
+          "type": "boolean"
+        },
+        "is_open_source": {
+          "type": "boolean"
+        },
+        "is_in_yc": {
+          "type": "boolean"
+        }
+      }
+    },
+    "extractPrompt": "Extract the company details, following the schema.",
+    "enableWebSearch": false,
+    "constrainUrls": false,
+    "options": {
+      "onlyMainContent": false,
+      "parsePDF": true,
+      "stealthMode": false,
+      "excludeTags": [],
+      "includeTags": [],
+      "waitFor": "",
+      "timeout": "",
+      "maxAge": "2 days",
+      "ignoreSitemap": false,
+      "crawlEntireDomain": false,
+      "sitemap": "include",
+      "limit": "10",
+      "maxDepth": "",
+      "excludePaths": [],
+      "includePaths": [],
+      "includeSubdomains": false,
+      "search": "",
+      "scrapeContentFromSearchResults": true,
+      "timeBasedSearch": "",
+      "location": "",
+      "prompt": ""
+    },
+    "formats": [
+      "markdown"
+    ],
+    "sources": [
+      "web"
+    ],
+    "categories": [],
+    "jsonSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_name": {
+          "type": "string"
+        },
+        "company_description": {
+          "type": "string"
+        }
+      }
+    },
+    "jsonPrompt": "",
+    "agent": {},
+    "url": "accelerators.ms/",
+    "endpoint": "scrape"
+  },
+  "status": "success",
+  "version": "4aqHsfv1yN5fm1UMIapIv",
+  "isPreview": false
+}

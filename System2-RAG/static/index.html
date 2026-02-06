@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System 2 - POC Accelerator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 RAG System 2 - POC Accelerator</h1>
+            <p class="subtitle">Generate Proof-of-Concepts with Retrieval-Augmented Generation</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="generate">Generate POC</button>
+            <button class="tab-button" data-tab="search">Search Solutions</button>
+            <button class="tab-button" data-tab="history">POC History</button>
+            <button class="tab-button" data-tab="status">System Status</button>
+        </div>
+
+        <!-- Tab 1: Generate POC -->
+        <div id="generate" class="tab-content active">
+            <h2>Generate Proof-of-Concept</h2>
+            <form id="pocForm">
+                <div class="form-group">
+                    <label for="solutionArea">Solution Area:</label>
+                    <select id="solutionArea" required>
+                        <option value="">-- Select Solution Area --</option>
+                        <option value="Azure (Data & AI)">Azure (Data & AI)</option>
+                        <option value="AI">AI</option>
+                        <option value="Security">Security</option>
+                        <option value="Cloud & AI Platforms">Cloud & AI Platforms</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pocTitle">POC Title:</label>
+                    <input type="text" id="pocTitle" placeholder="e.g., Azure Fabric Starter" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pocQuery">Detailed Query:</label>
+                    <textarea id="pocQuery" rows="4" placeholder="Describe your POC requirements..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="topResults">Top Results:</label>
+                    <input type="number" id="topResults" min="1" max="10" value="5">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Generate POC</button>
+            </form>
+
+            <div id="pocResult" class="result-box" style="display:none;">
+                <h3>Generated POC</h3>
+                <pre id="pocOutput"></pre>
+                <button class="btn btn-secondary" onclick="downloadPOC()">Download</button>
+            </div>
+
+            <div id="pocError" class="error-box" style="display:none;">
+                <strong>Error:</strong>
+                <p id="pocErrorMsg"></p>
+            </div>
+        </div>
+
+        <!-- Tab 2: Search Solutions -->
+        <div id="search" class="tab-content">
+            <h2>Search Solutions</h2>
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="searchQuery">Search Query:</label>
+                    <input type="text" id="searchQuery" placeholder="e.g., cloud transformation, AI automation" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topK">Number of Results:</label>
+                    <input type="number" id="topK" min="1" max="10" value="3">
+                </div>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="includeSynthesis" checked>
+                    Include Synthesis
+                </label>
+
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+
+            <div id="searchResult" class="result-box" style="display:none;">
+                <h3>Search Results</h3>
+                <div id="searchOutput"></div>
+            </div>
+
+            <div id="searchError" class="error-box" style="display:none;">
+                <strong>Error:</strong>
+                <p id="searchErrorMsg"></p>
+            </div>
+        </div>
+
+        <!-- Tab 3: POC History -->
+        <div id="history" class="tab-content">
+            <h2>Generated POC History</h2>
+            <button class="btn btn-secondary" onclick="loadHistory()">Refresh History</button>
+            <div id="historyResult" class="result-box" style="display:none;">
+                <div id="historyOutput"></div>
+            </div>
+            <div id="historyEmpty" class="info-box">
+                <p>No POCs generated yet. Generate a POC in the "Generate POC" tab.</p>
+            </div>
+        </div>
+
+        <!-- Tab 4: System Status -->
+        <div id="status" class="tab-content">
+            <h2>System Status</h2>
+            <button class="btn btn-secondary" onclick="checkSystemStatus()">Check Status</button>
+            <div id="statusResult" class="result-box" style="display:none;">
+                <pre id="statusOutput"></pre>
+            </div>
+
+            <div class="status-info">
+                <h3>System Information</h3>
+                <table>
+                    <tr>
+                        <td><strong>API Endpoint:</strong></td>
+                        <td id="apiEndpoint">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Environment:</strong></td>
+                        <td id="environment">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Status:</strong></td>
+                        <td id="healthStatus">Loading...</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 RAG System 2 - POC Accelerator | Powered by FastAPI & Azure</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

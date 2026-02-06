@@ -1,0 +1,8 @@
+# GitHub Pages Configuration
+# Serve HTML files from /docs folder
+# No Jekyll processing
+
+# Minimal config - just prevent Jekyll from processing
+exclude:
+  - '.*'
+plugins: []

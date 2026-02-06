@@ -1,0 +1,15 @@
+{
+  "scenario": "Governed AI Platform with Unified Data",
+  "composite_sources": [
+    "unified-data-fabric"
+  ],
+  "source_repos": {
+    "unified-data-fabric": {
+      "solution_area": "Azure (Data & AI)",
+      "complexity": "L400",
+      "description": "Solution accelerator for SolutionAreaEnum.AZURE_DATA_AI"
+    }
+  },
+  "estimated_duration_hours": 3.0,
+  "responsible_ai_tag": false
+}

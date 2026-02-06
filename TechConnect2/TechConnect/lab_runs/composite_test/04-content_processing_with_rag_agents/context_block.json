@@ -1,0 +1,15 @@
+{
+  "scenario": "Content Processing with RAG Agents",
+  "composite_sources": [
+    "multi-agent-automation"
+  ],
+  "source_repos": {
+    "multi-agent-automation": {
+      "solution_area": "AI",
+      "complexity": "L400",
+      "description": "Solution accelerator for SolutionAreaEnum.AI"
+    }
+  },
+  "estimated_duration_hours": 3.0,
+  "responsible_ai_tag": true
+}
